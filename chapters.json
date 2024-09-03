@@ -6,5 +6,9 @@
   {
     "name": "Chương 3: Tiến trình",
     "quizFile": "quizzes/quiz_data_chapter3.json"
+  },
+  {
+    "name": "Chương 4: Định thời CPU",
+    "quizFile": "quizzes/quiz_data_chapter4.json"
   }
 ]

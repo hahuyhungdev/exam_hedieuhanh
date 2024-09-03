@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Việc định thời CPU được thực hiện bởi bộ định thời nào?",
+    "options": [
+      "Bộ định thời dài",
+      "Bộ định thời trung gian",
+      "Bộ định thời công việc",
+      "Bộ định thời ngắn"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Nếu tăng tốc độ thực thi của CPU, giải thuật định thời nào sẽ có thời gian hoàn thành giảm KHÔNG theo tỷ lệ thuận với tốc độ tăng thêm của CPU?",
+    "options": ["SJF", "Priority", "FCFS", "Round Robin"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Chọn phát biểu SAI trong các phát biểu bên dưới?",
+    "options": [
+      "Giải thuật SRTF là giải thuật định thời CPU theo độ ưu tiên trong đó thời gian sử dụng CPU tỷ lệ thuận với độ ưu tiên.",
+      "Giải thuật FCFS có thể được xem như giải thuật Round Robin với thời gian quantum không xác định.",
+      "Một trong những kỹ thuật thường dùng để ước lượng thời gian cần CPU tiếp theo của tiến trình là sử dụng trung bình hàm mũ (exponential averaging) của các thời gian sử dụng CPU trong quá khứ.",
+      "Trong giải thuật Priority có trưng dụng, độ ưu tiên của một tiến trình có thể thay đổi."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Chọn phát biểu ĐÚNG về giải thuật định thời Round Robin?",
+    "options": [
+      "Nếu quantum time dài thì throughput sẽ kém hơn, do tăng phí tổn OS overhead.",
+      "Nếu quantum time ngắn thì thời gian đáp ứng chậm.",
+      "Nếu quantum time ngắn thì sẽ có ít chuyển ngữ cảnh nên phí tổn sẽ thấp.",
+      "Nếu quantum time quá lớn, Round Robin trở thành FCFS."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Thuật toán định thời nào sau đây KHÔNG gây ra tình trạng “đói” (starvation)?",
+    "options": [
+      "FCFS",
+      "SJF",
+      "Priority",
+      "Cả 3 giải thuật (Priority, SJF, FCFS) đều không gây ra tình trạng đói"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Các tiêu chuẩn định thời CPU được chia thành những loại nào?",
+    "options": [
+      "Hướng hệ thống và hướng chương trình",
+      "Hướng người dùng và hướng chương trình",
+      "Hướng toàn cục và hướng cục bộ",
+      "Hướng người dùng và hướng hệ thống"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Chọn thuật toán định thời nào dưới đây sử dụng độ ưu tiên cao hơn để quyết định tiến trình nào sẽ chạy trước?",
+    "options": [
+      "First-Come, First-Served",
+      "Highest Response Ratio Next",
+      "Multilevel Queue",
+      "Shortest Job First"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Chọn phát biểu SAI về giải thuật Round Robin?",
+    "options": [
+      "Round Robin sử dụng một giả thiết ngầm là tất cả các tiến trình đều có tầm quan trọng ngang nhau",
+      "Nhược điểm của Round Robin là các tiến trình dạng I/O-bound vẫn còn được “ưu tiên”",
+      "Thời gian hoàn thành trung bình không chắc sẽ được cải thiện khi quantum lớn",
+      "Hiệu năng của giải thuật Round Robin phụ thuộc vào kích thước của quantum time."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Trong các yếu tố của giải thuật định thời, yếu tố nào được sử dụng để “chọn tiến trình trong ready queue thực thi”?",
+    "options": [
+      "burst time",
+      "decision mode",
+      "arrival time",
+      "selection function"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Khoảng thời gian từ lúc tiến trình nhận yêu cầu đến khi yêu cầu đầu tiên được đáp ứng được gọi là gì?",
+    "options": [
+      "Response time",
+      "Waiting time",
+      "Turnaround time",
+      "Dispatch latency"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "SRTF là từ viết tắt của giải thuật định thời nào?",
+    "options": [
+      "Shortest-Response-Time-First",
+      "Shortest-Remaining-Time-Fair",
+      "Shortest-Ratio-Time-First",
+      "Shortest-Remaining-Time-First"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Khi thực hiện giải thuật định thời Round Robin với 10 tiến trình đang nằm trong hàng đợi ready và time quantum = 10 ms thì thời gian lâu nhất mà một tiến trình có thể phải chờ đợi cho đến khi nó được đáp ứng là bao nhiêu?",
+    "options": ["10 ms", "90 ms", "81 ms", "100 ms"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "“Số tiến trình hoàn tất công việc trong một đơn vị thời gian là cực đại” là yêu cầu đặt ra đối với tiêu chuẩn định thời nào?",
+    "options": [
+      "throughput",
+      "processor utilization",
+      "fairness",
+      "turnaround time"
+    ],
+    "correctAnswer": 0
+  }
+]
