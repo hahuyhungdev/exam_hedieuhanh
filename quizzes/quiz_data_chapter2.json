@@ -7,7 +7,7 @@
       "Phần mềm máy tính",
       "Các chương trình ứng dụng"
     ],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "question": "Hệ điều hành nào dưới đây KHÔNG sử dụng kiến trúc vi nhân?",
@@ -127,7 +127,7 @@
       "Cách thức hệ thống quản lý các chương trình",
       "Số lượng chương trình được thực thi"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "question": "Ý nào trong các ý sau KHÔNG phải là một dịch vụ do hệ điều hành cung cấp?",
