@@ -104,6 +104,18 @@ function submitQuiz() {
     }
   });
 
+  // Lưu kết quả vào localStorage
+  localStorage.setItem(
+    "lastQuizResult",
+    JSON.stringify({
+      chapter: currentChapter,
+      quizData: quizData,
+      userAnswers: userAnswers,
+      correctAnswers: correctAnswers,
+      totalQuestions: quizData.length,
+    })
+  );
+
   document.getElementById("quiz-container").style.display = "none";
   document.getElementById("results").style.display = "block";
   document.getElementById("correct-answers").textContent = correctAnswers;
@@ -112,21 +124,79 @@ function submitQuiz() {
 function resetQuiz() {
   document.getElementById("quiz-container").style.display = "none";
   document.getElementById("results").style.display = "none";
+  document.getElementById("review-container").style.display = "none";
   document.getElementById("questions-container").innerHTML = "";
   document.getElementById("submit-btn").style.display = "block";
   userAnswers = [];
+}
+function reviewLastQuiz() {
+  const lastQuizResult = JSON.parse(localStorage.getItem("lastQuizResult"));
+  if (!lastQuizResult) {
+    alert("Không có kết quả bài làm gần nhất!");
+    return;
+  }
+
+  const reviewContainer = document.getElementById("review-container");
+  const reviewQuestionsContainer = document.getElementById(
+    "review-questions-container"
+  );
+  reviewQuestionsContainer.innerHTML = "";
+
+  lastQuizResult.quizData.forEach((questionData, index) => {
+    const questionElement = document.createElement("div");
+    questionElement.classList.add("question");
+    questionElement.innerHTML = `
+      <h3>Câu ${index + 1}:</h3>
+      <pre class="question-text">${questionData.question}</pre>
+      <div class="options-container" id="review-options-container-${index}"></div>
+    `;
+    reviewQuestionsContainer.appendChild(questionElement);
+
+    const optionsContainer = document.getElementById(
+      `review-options-container-${index}`
+    );
+    questionData.options.forEach((option, optionIndex) => {
+      const optionElement = document.createElement("div");
+      optionElement.classList.add("option");
+      if (optionIndex === questionData.correctAnswer) {
+        optionElement.classList.add("correct");
+      }
+      if (optionIndex === lastQuizResult.userAnswers[index]) {
+        optionElement.classList.add("selected");
+      }
+      optionElement.textContent = option;
+      optionsContainer.appendChild(optionElement);
+    });
+  });
+
+  document.getElementById("quiz-container").style.display = "none";
+  document.getElementById("results").style.display = "none";
+  reviewContainer.style.display = "block";
 }
 document.addEventListener("DOMContentLoaded", () => {
   loadChapters();
   document.getElementById("chapter-select").addEventListener("change", (e) => {
     const selectedIndex = parseInt(e.target.value);
     if (!isNaN(selectedIndex)) {
+      currentChapter = selectedIndex;
       loadQuizData(selectedIndex);
     } else {
-      resetQuiz(); // Reset quiz when no chapter is selected
+      resetQuiz();
     }
   });
   document.getElementById("submit-btn").addEventListener("click", submitQuiz);
+  document.getElementById("retry-btn").addEventListener("click", () => {
+    resetQuiz();
+    displayAllQuestions();
+    document.getElementById("quiz-container").style.display = "block";
+  });
+  document
+    .getElementById("review-btn")
+    .addEventListener("click", reviewLastQuiz);
+  document.getElementById("back-to-quiz-btn").addEventListener("click", () => {
+    document.getElementById("review-container").style.display = "none";
+    document.getElementById("chapter-selection").style.display = "block";
+  });
 });
 
 document.getElementById("retry-btn").addEventListener("click", () => {

@@ -109,3 +109,26 @@ h1 {
     padding: 10px;
   }
 }
+
+.option.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.option.selected {
+  background-color: #2196f3;
+  color: white;
+}
+
+.option.selected.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+#review-container {
+  margin-top: 20px;
+}
+
+#back-to-quiz-btn {
+  margin-top: 20px;
+}
