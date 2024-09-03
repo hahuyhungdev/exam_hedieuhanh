@@ -1,0 +1,182 @@
+[
+  {
+    "question": "Chọn cụm từ phù hợp để điền vào dấu … trong phát biểu sau: Hệ điều hành là chương trình trung gian giữa … với phần cứng máy tính",
+    "options": [
+      "Người sử dụng",
+      "Bộ xử lý trung tâm",
+      "Phần mềm máy tính",
+      "Các chương trình ứng dụng"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Hệ điều hành nào dưới đây KHÔNG sử dụng kiến trúc vi nhân?",
+    "options": ["MS-DOS", "QNX", "Apple MasOS Server", "Windows NT"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Đặc điểm nào dưới đây KHÔNG phải là đặc điểm của hệ thống đa chương?",
+    "options": [
+      "Nhiều công việc được nạp đồng thời vào bộ nhớ chính.",
+      "Khi một tiến trình thực hiện I/O, một tiến trình khác được thực thi.",
+      "Có bộ giám sát thường trực.",
+      "Tận dụng được thời gian rảnh, tăng hiệu suất sử dụng CPU."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Thành phần nào không phải là một thành phần của hệ điều hành?",
+    "options": [
+      "Quản lý file",
+      "Quản lý tiến trình",
+      "Hệ thống bảo vệ",
+      "Quản lý tiểu trình"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Hệ thống gom cụm được phân loại thành những mô hình nào?",
+    "options": [
+      "Hard real-time và soft real-time.",
+      "Đa xử lý đối xứng và bất đối xứng.",
+      "Đơn chương và đa chương.",
+      "Client-server và peer-to-peer."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Để giao tiếp giữa tiến trình và hệ điều hành thì dùng gì?",
+    "options": [
+      "Chương trình ứng dụng",
+      "Lời gọi hệ thống",
+      "Chương trình người dùng",
+      "Thông điệp"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Đáp án nào KHÔNG phải là một chương trình hệ thống trong hệ điều hành?",
+    "options": [
+      "Kết thúc tiến trình, thu hồi tài nguyên: như close, return",
+      "Quản lý hệ thống file: như create, delete, rename, list",
+      "Nạp, thực thi, giúp tìm lỗi chương trình: như loader, debugger",
+      "Hiển thị thông tin trạng thái: như date, time, dung lượng bộ nhớ trống"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Đáp án nào KHÔNG phải là đặc điểm của cấu trúc Modules?",
+    "options": [
+      "Giao tiếp giữa các user module qua cơ chế truyền thông điệp",
+      "Sử dụng cách tiếp cận hướng đối tượng",
+      "Mỗi core thành phần là tách biệt nhau",
+      "Trao đổi thông qua các interfaces"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Các đặc điểm dưới đây thuộc về loại hệ thống nào? - Nhiều công việc được nạp đồng thời vào bộ nhớ chính - Khi một tiến trình thực hiện I/O, một tiến trình khác được thực thi",
+    "options": [
+      "spooling",
+      "multiprogramming",
+      "master – slave",
+      "uniprograming"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Đáp án nào KHÔNG phải là cơ chế trao đổi thông tin giữa các tiến trình?",
+    "options": ["Shared memory", "Shared message", "Message passing"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là nhiệm vụ của hệ thống bảo vệ?",
+    "options": [
+      "Phương tiện thi hành các chính sách",
+      "Phân định được sự truy cập tài nguyên hợp pháp và bất hợp pháp",
+      "Cung cấp giao diện chung đến các trình điều khiển thiết bị",
+      "Cung cấp cơ chế kiểm soát đăng nhập/xuất"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Hai chế độ hoạt động cơ bản của Hệ điều hành là?",
+    "options": [
+      "User mode và Core mode",
+      "Program mode và Kernel mode",
+      "Program mode và System mode",
+      "User mode và Kernel mode"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là nhiệm vụ của thành phần quản lý tiến trình?",
+    "options": [
+      "Tạm dừng/ thực thi tiếp tiến trình",
+      "Tạo và hủy tiến trình",
+      "Cung cấp các cơ chế đồng bộ hoạt động các tiến trình",
+      "Quyết định sẽ nạp chương trình nào khi có vùng nhớ trống"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Sự khác biệt cơ bản giữa hệ thống đơn chương và hệ thống đa chương là gì?",
+    "options": [
+      "Cách bộ xử lý được sử dụng",
+      "Số lượng tài nguyên sử dụng",
+      "Cách thức hệ thống quản lý các chương trình",
+      "Số lượng chương trình được thực thi"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Ý nào trong các ý sau KHÔNG phải là một dịch vụ do hệ điều hành cung cấp?",
+    "options": [
+      "Cấp phát tài nguyên",
+      "Phát hiện lỗi",
+      "Cung cấp phần mềm",
+      "Thực thi chương trình"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Trong các loại cấu trúc hệ điều hành nào dưới đây mà Hệ điều hành được chia thành nhiều lớp?",
+    "options": ["Microkernel", "Monolithic", "Hybrid", "Layers"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Hệ điều hành được xây dựng theo cấu trúc phân lớp (layer) KHÔNG có đặc điểm nào dưới đây?",
+    "options": [
+      "Hệ điều hành được phân chia thành nhiều lớp, lớp trên chỉ phụ thuộc lớp dưới",
+      "Một lớp chỉ có thể gọi các hàm của lớp dưới và các hàm của nó được gọi bởi lớp trên",
+      "Lớp trên cùng là lớp giao tiếp với người dùng",
+      "Các lớp giao tiếp với nhau qua cơ chế truyền thông điệp"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Đáp án nào KHÔNG phải là đặc điểm của cấu trúc Microkernels?",
+    "options": [
+      "Giao tiếp giữa các user module qua cơ chế truyền thông điệp",
+      "Phân chia module theo microkernel",
+      "Chuyển một số chức năng của OS từ kernel space sang user space",
+      "Sử dụng cách tiếp cận hướng đối tượng"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Để kết thúc một tiến trình trên hệ điều hành Windows, cần sử dụng lời gọi hệ thống nào?",
+    "options": ["Fork()", "Exit()", "CreateProcess()", "ExitProcess()"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "\"Các máy tính trong hệ thống đều ngang hàng nhau, không có cơ sở dữ liệu tập trung\" là đặc điểm của loại hệ thống phân tán nào?",
+    "options": [
+      "client-server",
+      "symmetric multiprocessor",
+      "peer-to-peer",
+      "asymmetric multiprocessor"
+    ],
+    "correctAnswer": 2
+  }
+]

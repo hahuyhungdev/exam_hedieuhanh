@@ -1,0 +1,16 @@
+Câu 1: Đáp án đúng là c. 6
+Câu 2: Đáp án đúng là c. Tiến trình đã có đủ tài nguyên, chỉ còn cần CPU
+Câu 3: Đáp án đúng là d. Biến toàn cục
+Câu 4: Đáp án đúng là c. GPU scheduler
+Câu 5: Đáp án đúng là d. Thông tin cấu hình hệ điều hành
+Câu 6: Đáp án đúng là b. Loader
+Câu 7: Đáp án đúng là b. 14
+Câu 8: Đáp án đúng là b. login
+Câu 9: Đáp án đúng là b. ready
+Câu 11: Đáp án đúng là c. Ready
+Câu 12: Đáp án đúng là b. Chuyển về trạng thái waiting
+Câu 13: Đáp án đúng là a. Long-term Scheduler
+Câu 14: Đáp án đúng là c. Linker
+Câu 15: Đáp án đúng là c. CreateProcess()
+Câu 17: Đáp án đúng là d. Chuyển ngữ cảnh
+Câu 18: Đáp án đúng là b. Shared memory

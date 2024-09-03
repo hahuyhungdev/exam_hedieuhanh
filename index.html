@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài kiểm tra Hệ điều hành</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>Bài kiểm tra Hệ điều hành</h1>
+      <div id="chapter-selection">
+        <h2>Chọn chương:</h2>
+        <select id="chapter-select">
+          <option value="">-- Chọn chương --</option>
+        </select>
+      </div>
+
+      <div id="quiz-container" style="display: none">
+        <div id="questions-container"></div>
+        <button id="submit-btn">Nộp bài</button>
+      </div>
+
+      <div id="results" style="display: none">
+        <p>
+          Bạn đã trả lời đúng <span id="correct-answers"></span> trên
+          <span id="total-questions"></span> câu hỏi.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

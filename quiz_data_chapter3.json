@@ -1,0 +1,115 @@
+[
+  {
+    "question": "Cho đoạn mã nguồn sau:\n\n#include <stdio.h>\n#include <unistd.h>\nint main()\n{\n    int i;\n    fork();\n    print(\"hi\\n\");\n    for (i = 0; i < 2; i++)\n    {\n         int k = fork();\n         if (k>0)\n              printf(\"hello\\n\");\n     }\n     return 0;\n}\nKhi chạy chương trình này, bao nhiêu từ hello sẽ được in ra?",
+    "options": ["10", "8", "6", "4"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Tiến trình ở trạng thái ready khi nào?",
+    "options": [
+      "Các lệnh của tiến trình đang được thực thi",
+      "Tiến trình vừa được tạo",
+      "Tiến trình đã có đủ tài nguyên, chỉ còn cần CPU",
+      "Tiến trình đã kết thúc"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Khi tiến trình được nạp vào bộ nhớ, stack section của nó KHÔNG chứa thành phần nào dưới đây?",
+    "options": [
+      "Địa chỉ trả về",
+      "Biến cục bộ",
+      "Tham số truyền cho hàm",
+      "Biến toàn cục"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Đáp án nào KHÔNG phải là một bộ định thời trong hệ điều hành?",
+    "options": [
+      "Short-term scheduler",
+      "Job scheduler",
+      "GPU scheduler",
+      "Medium-term scheduler"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "PCB KHÔNG bao gồm thông tin gì?",
+    "options": [
+      "Thông tin quản lý bộ nhớ",
+      "Trạng thái của tiến trình",
+      "Thông tin trạng thái I/O",
+      "Thông tin cấu hình hệ điều hành"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Khi một chương trình được thực thi thì thành phần nào sẽ chuyển Process image của chương trình lên bộ nhớ chính?",
+    "options": ["Assembler", "Loader", "Compiler", "Linker"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Cho đoạn mã nguồn sau:\n\n#include <stdio.h>\n#include <unistd.h>\nint main()\n{\n    int i;\n    for (i = 0; i < 3; i++)\n    {\n         fork();\n         printf(\"hello\\n\");\n     }\n     return 0;\n}\nKhi chạy chương trình này, bao nhiêu từ hello sẽ được in ra?",
+    "options": ["12", "14", "8", "16"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Trong cây tiến trình của hệ điều hành Linux/Unix, thì tiến trình bash là tiến trình con của tiến trình nào?",
+    "options": ["ps", "login", "kthreadd", "sshd"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Một tiến trình đang ở trạng thái running thì tiến trình đó gặp sự kiện hoặc nhập/xuất và chuyển sang trạng thái waiting. Sau khi tiến trình đó hoàn thành thao tác nhập/xuất thì tiến trình đó sẽ chuyển sang trạng thái nào?",
+    "options": ["new", "ready", "running"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Sau khi thực hiện việc giao tiếp với I/O thì tiến trình sẽ chuyển từ trạng thái waiting sang trạng thái nào?",
+    "options": ["Terminated", "Running", "Ready", "New"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Khi chạy một chương trình C trong hệ điều hành Linux, gặp câu lệnh printf thì trạng thái của tiến trình sẽ như thế nào?",
+    "options": [
+      "Chuyển về trạng thái ready",
+      "Chuyển về trạng thái waiting",
+      "Vẫn running"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Trong các bộ định thời sau, bộ định thời nào sẽ xác định process nào từ trạng thái new sẽ được chuyển sang ready queue?",
+    "options": [
+      "Long-term Scheduler",
+      "Medium-term Scheduler",
+      "Short-term Scheduler"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Trong quy trình biên dịch và nạp chương trình vào bộ nhớ, để kết nối các Object module lại thành file Executable binary file thì sẽ dùng bộ phận gì?",
+    "options": ["Loader", "Compiler", "Linker"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Để tạo một tiến trình mới trên hệ điều hành Windows, cần sử dụng lời gọi hệ thống nào?",
+    "options": ["fork()", "exec()", "CreateProcess()", "ExitProcess()"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Việc một tiến trình đang sử dụng CPU sau đó chuyển CPU cho một tiến trình khác và đòi hỏi tất cả các trạng thái của tiến trình cũ này phải được lưu lại và trạng thái của tiến trình mới phải được nạp vào được gọi là?",
+    "options": [
+      "Lặp lịch CPU",
+      "Chuyển tiến trình",
+      "Tạo độ trễ",
+      "Chuyển ngữ cảnh"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Tiến trình có thể giao tiếp với nhau thông qua mô hình nào?",
+    "options": ["System call", "Shared memory", "TCB", "PCB"],
+    "correctAnswer": 1
+  }
+]

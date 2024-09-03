@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Chương 2: hệ điều hành và kiến trúc",
+    "quizFile": "quiz_data_chapter2.json"
+  },
+  {
+    "name": "Chương 3: Tiến trình",
+    "quizFile": "quiz_data_chapter3.json"
+  }
+]
