@@ -30,6 +30,7 @@ function populateChapterSelect() {
 async function loadQuizData(chapterIndex) {
   try {
     console.log("Loading quiz data for chapter:", chapterIndex);
+    resetQuiz(); // Reset quiz state before loading new data
     if (chapterIndex < 0 || chapterIndex >= chapters.length) {
       throw new Error("Invalid chapter index");
     }
@@ -49,7 +50,6 @@ async function loadQuizData(chapterIndex) {
     document.getElementById("submit-btn").style.display = "none";
   }
 }
-
 function displayAllQuestions() {
   console.log("Displaying questions");
   console.log(quizData);
@@ -109,7 +109,13 @@ function submitQuiz() {
   document.getElementById("correct-answers").textContent = correctAnswers;
   document.getElementById("total-questions").textContent = quizData.length;
 }
-
+function resetQuiz() {
+  document.getElementById("quiz-container").style.display = "none";
+  document.getElementById("results").style.display = "none";
+  document.getElementById("questions-container").innerHTML = "";
+  document.getElementById("submit-btn").style.display = "block";
+  userAnswers = [];
+}
 document.addEventListener("DOMContentLoaded", () => {
   loadChapters();
   document.getElementById("chapter-select").addEventListener("change", (e) => {
@@ -117,11 +123,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isNaN(selectedIndex)) {
       loadQuizData(selectedIndex);
     } else {
-      // Reset quiz container when no chapter is selected
-      document.getElementById("quiz-container").style.display = "none";
-      document.getElementById("questions-container").innerHTML = "";
-      document.getElementById("submit-btn").style.display = "none";
+      resetQuiz(); // Reset quiz when no chapter is selected
     }
   });
   document.getElementById("submit-btn").addEventListener("click", submitQuiz);
+});
+
+document.getElementById("retry-btn").addEventListener("click", () => {
+  resetQuiz();
+  displayAllQuestions();
+  document.getElementById("quiz-container").style.display = "block";
 });
