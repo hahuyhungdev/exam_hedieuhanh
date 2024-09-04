@@ -149,11 +149,13 @@ function submitQuiz() {
   let correctAnswers = 0;
   quizData.forEach((question, index) => {
     if (question.type === "fillInBlank") {
-      if (
-        userAnswers[index].toLowerCase().trim() ===
-        question.correctAnswer.toLowerCase().trim()
-      ) {
-        correctAnswers++;
+      if (userAnswers[index] && typeof userAnswers[index] === "string") {
+        if (
+          userAnswers[index].toLowerCase().trim() ===
+          question.correctAnswer.toLowerCase().trim()
+        ) {
+          correctAnswers++;
+        }
       }
     } else {
       if (userAnswers[index] === question.correctAnswer) {

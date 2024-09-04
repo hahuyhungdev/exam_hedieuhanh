@@ -1,212 +1,112 @@
 [
   {
-    "question": "Chức năng chính của khóa mutex trong việc giải quyết bài toán critical section trong hệ điều hành là gì?",
-    "options": [
-      "Cung cấp cơ chế chỉ cho phép một tiểu trình có thể truy cập tài nguyên được chia sẻ tại một thời điểm",
-      "Cung cấp cơ chế để nhiều tiểu trình chờ đợi vô thời hạn để truy cập tài nguyên được chia sẻ",
-      "Cung cấp cơ chế cho phép nhiều tiểu trình có thể đồng thời truy cập tài nguyên được chia sẻ",
-      "Cung cấp cơ chế để các tiểu trình trả lại tài nguyên được chia sẻ sau khi kết thúc"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Điền vào chỗ trống: Hệ điều hành là ___________.",
+    "question": "Trong một hệ thống, không gian địa chỉ luận lý có 128 trang, mỗi trang có kích thước là 8KB:\n\nCần ___________bit để biểu diễn một địa chỉ luận lý\n",
     "type": "fillInBlank",
-    "correctAnswer": "phần mềm quản lý tài nguyên máy tính"
+    "correctAnswer": "20"
   },
   {
-    "question": "Nhược điểm chính của thuật toán Peterson là gì?",
+    "question": "Gọi base_register và limit_register là 2 thanh ghi lưu địa chỉ nền và giới hạn địa chỉ của một tiến trình. Với base_register = 10000 và limit_register = 500, CÁC địa chỉ ảo nào sau đây là hợp lệ?",
+    "options": ["10289 && 467", "231 && 467", "605"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Nếu vị trí bộ nhớ được biết trước thì (mã tuyệt đối) absolute code có thể được tạo là mô tả nói về việc gán địa chỉ của các lệnh và dữ liệu vào giai đoạn nào?",
+    "options": ["Load time", "Execution time", "Compile time"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Cho bảng trang như bên dưới:\n\n0\t4\n1\t8\n2\t1\n3\t2\n4\t9\n5\t3\nBiết kích thước mỗi trang là 2Kbytes, như vậy địa chỉ ảo 4567 sẽ được ánh xạ thành địa chỉ vật lý ___________.",
+    "type": "fillInBlank",
+    "correctAnswer": "2519"
+  },
+  {
+    "question": "Nếu không sử dụng TLBs, hệ điều hành cần truy cập bộ nhớ chính bao nhiều lần cho một thao tác truy cập lệnh/dữ liệu?",
+    "options": ["3 lần", "1 lần", "4 lần", "2 lần"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Hiện tượng nào sau đây có thể xảy ra trong giải thuật phân trang?",
     "options": [
-      "Nó không đảm bảo loại trừ tương hỗ",
-      "Nó chỉ phù hợp với các hệ thống có độ cạnh tranh thấp",
-      "Nó có thể khiến tiến trình gặp tình trạng deadlock hoặc đói",
-      "Không thể hoạt động trên các kiến trúc máy tính hiện đại nếu không có Memory Barrier"
+      "Phân mảnh ngoại",
+      "Tất cả đều đúng",
+      "Các mảnh bộ nhớ có kích thước thay đổi",
+      "Phân mảnh nội"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "Thuật toán Peterson được sử dụng để làm gì trong hệ điều hành?",
+    "question": "Hiện tượng phân mảnh ngoại có thể được giải quyết bằng phương pháp kết khối (compaction). Chọn phát biểu khi nói về phương pháp này?",
     "options": [
-      "Triển khai bộ nhớ ảo",
-      "Lập lịch tiến trình",
-      "Đảm bảo loại trừ tương hỗ",
-      "Hiện thực semaphore"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Bản chất của semaphore khi hiện thực là gì?",
-    "options": [
-      "Một cấu trúc gồm 2 thuộc tính là: giá trị (kiểu dữ liệu số nguyên) và hàng đợi (kiểu dữ liệu là tiến trình)",
-      "Một hàng đợi có kiểu dữ liệu là tiến trình",
-      "Một biến số nguyên",
-      "Một biến số nguyên không âm"
+      "Tất cả đều đúng",
+      "Việc kết khối được thực hiện trong giai đoạn thực thi",
+      "Các vùng nhớ được trộn để gom tất cả vùng nhớ trống lại với nhau để hình thành một vùng nhớ trống lớn",
+      "Phương pháp kết khối chỉ khả thi chỉ khi hệ thống có thể linh hoạt việc tái định vị địa chỉ"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Nếu giá trị của semaphore s1 = -5 thì phát biểu nào sau đây là đúng?",
+    "question": "Xét một không gian địa chỉ luận lý cần 20 bit để biểu diễn địa chỉ. Biết rằng 12 trang trong không gian này được ánh xạ vào bộ nhớ vật lý có 36 khung trang. Vậy ta cần ___________ bit để biểu diễn một địa chỉ vật lý.",
+    "type": "fillInBlank",
+    "correctAnswer": "22"
+  },
+  {
+    "question": "Associative memory là thuật ngữ để chỉ:",
     "options": [
-      "Không một tiến trình nào có thể thực hiện thao tác wait(s1) cho đến khi semaphore s1 lớn hơn 0",
-      "Có 5 tiến trình đang bị chặn trên hàng đợi của semaphore s1",
-      "Phải thực hiện thao tác signal(s1) 5 lần thì mới có thể thực hiện thao tác wait(s1)",
-      "Semaphore không được phép là số âm nên không thể có trường hợp semaphore s1 bằng -5"
+      "Một vùng nhớ đặc biệt có tác dụng lưu trữ bảng trang",
+      "Một vùng nhớ đặc biệt để liên kết địa chỉ luận lý và địa chỉ vật lý",
+      "Một bảng trang rút gọn đặc biệt được lưu trong cache",
+      "Một bảng trang đặc biệt có tác dụng ghi nhận những trang đã được truy xuất"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Xét một hệ thống sử dụng kỹ thuật phân trang, với bảng trang được lưu trữ trong bộ nhớ chính. Nếu sử dụng TLBs với hit-ratio (tỉ lệ tìm thấy) là 80%, thời gian để tìm trong TLBs là 25 ns. Thời gian truy xuất bộ nhớ trong hệ thống (effective memory reference time) là 175ns. Vậy thời gian cho một lần truy xuất bộ nhớ là ___________ ns",
+    "type": "fillInBlank",
+    "correctAnswer": "125"
+  },
+  {
+    "question": "Xét một hệ thống sử dụng kỹ thuật phân trang, với bảng trang được lưu trữ trong bộ nhớ chính. Thời gian cho một lần truy xuất bộ nhớ bình thường là 184ns, nếu sử dụng TLBs với hit-ratio (tỉ lệ tìm thấy) là 95%, thời gian để tìm trong TLBs bằng 20ns, tính thời gian cho một thao tác truy xuất lệnh/dữ liệu trong hệ thống (effective memory reference time).",
+    "options": ["312.2ns", "505.2ns", "213.2ns", "205.4ns"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Việc gán địa chỉ của các lệnh và dữ liệu vào địa chỉ của bộ nhớ chính diễn ra ở giai đoạn nào nếu hệ điều hành không biết vị trí chương trình trong bộ nhớ tại thời điểm biên dịch?",
+    "options": [
+      "Cannot bind address",
+      "Execution time",
+      "Load time",
+      "Compile time"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Chọn phát biểu đúng khi nói về hiện tượng phân mảnh nội?",
+    "options": [
+      "Tổng dung lượng còn lại trong không gian bộ nhớ đủ để thỏa mãn yêu cầu cấp phát nhưng lại không liên tục",
+      "Bộ nhớ cấp phát lớn hơn một ít so với yêu cầu cấp phát bộ nhớ",
+      "Chênh lệch kích thước giữa vùng nhớ được cấp phát và yêu cầu cấp phát",
+      "Tất cả đều sai"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Phát biểu nào sau đây là đúng về các thao tác đơn nguyên trong hệ điều hành?",
+    "question": "Phần cứng thực hiện việc ánh xạ địa chỉ ảo thành địa chỉ vật lý được gọi là?",
     "options": [
-      "Các thao tác đơn nguyên yêu cầu sử dụng khóa hoặc semaphore để đảm bảo đồng bộ hóa",
-      "Các thao tác đơn nguyên đảm bảo rằng một tập hợp các hoạt động được thực hiện như một hành động duy nhất không thể chia nhỏ",
-      "Các thao tác đơn nguyên chỉ được sử dụng trong các hệ thống đơn bộ vi xử lý",
-      "Các thao tác đơn nguyên chỉ có thể được sử dụng cho các phép toán số học"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Giải pháp nào sau đây có thể được dùng để ngăn chặn race condition trong hệ điều hành?",
-    "options": [
-      "Giảm lượng bộ nhớ có sẵn cho mỗi tiến trình hoặc luồng.",
-      "Tăng độ ưu tiên của các tiến trình hoặc luồng cần truy cập tài nguyên chia sẻ.",
-      "Tăng số tiến trình hoặc luồng có thể truy cập tài nguyên chia sẻ.",
-      "Triển khai các cơ chế đồng bộ hóa phù hợp."
+      "Input/Output Controller (IOC)",
+      "Memory Mapping Unit (MMU)",
+      "Random Access Memory (RAM)",
+      "Memory Management Unit (MMU)"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "Giải pháp đồng bộ của Peterson là sự kết hợp của:",
+    "question": "Trong kỹ thuật paging, bộ nhớ vật lý được chia thành các khối, ý nào sau đây mô tả đúng về các khối này?",
     "options": [
-      "Biến semaphore kiểm tra số lần thực thi và mảng order[] kiểm tra thứ tự",
-      "Biến turn kiểm tra lượt và mảng flag[] kiểm tra tính sẵn sàng",
-      "Biến flag kiểm tra lượt và mảng priority[] kiểm tra độ ưu tiên",
-      "Biến turn kiểm tra lượt và mảng order[] kiểm tra thứ tự"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Phát biểu nào đúng khi nói về thuật toán Peterson?",
-    "options": [
-      "Thuật toán Peterson chỉ có thể được sử dụng với hai tiến trình",
-      "Thuật toán Peterson được sử dụng để tránh deadlock",
-      "Thuật toán Peterson được sử dụng để tránh tình trạng đói (starvation)",
-      "Thuật toán Peterson yêu cầu hỗ trợ phần cứng cho các thao tác đơn nguyên"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Race condition là gì?",
-    "options": [
-      "Vấn đề mà một tiến trình hoặc luồng bị kẹt trong một vòng lặp vô hạn.",
-      "Tình trạng mà một tiến trình hoặc luồng bị đình trệ do lỗi bộ nhớ.",
-      "Tình huống mà hai hoặc nhiều tiến trình hoặc luồng truy cập tài nguyên hoặc dữ liệu chia sẻ cùng một lúc.",
-      "Tình trạng mà một tiến trình hoặc luồng không thể truy cập tài nguyên vì nó đã được sử dụng."
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Đồng bộ hóa đóng vai trò gì cho lời giải bài toán critical section?",
-    "options": [
-      "Đảm bảo loại trừ tương hỗ (mutual exclusion)",
-      "Cải thiện hiệu suất hệ thống",
-      "Cung cấp sự công bằng trong phân bổ tài nguyên",
-      "Ngăn chặn tình trạng deadlock"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Chọn phát biểu ĐÚNG trong các phát biểu bên dưới?",
-    "options": [
-      "Các đoạn mã nguồn có chứa các thao tác lên dữ liệu chia sẻ trong mỗi tiến trình được gọi là race condition",
-      "Khi thực hiện đồng bộ sử dụng semaphore, các tiến trình sẽ từ bỏ CPU khi chưa được vào critical section",
-      "Giải pháp Peterson có thể hiện thực với n tiến trình",
-      "Một trong những yêu cầu đặt ra đối với bài toán Producer – Consumer là Consumer không được đọc dữ liệu từ buffer đã đầy"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Critical section trong hệ điều hành là gì?",
-    "options": [
-      "Vùng code được dùng chung bởi hai hay nhiều tiến trình",
-      "Vùng code tác động lên dữ liệu được chia sẻ giữa hai hay nhiều tiến trình",
-      "Data section được cấp phát chung cho hai hay nhiều tiến trình",
-      "Vùng nhớ chứa dữ liệu được chia sẻ bởi hai hay nhiều tiến trình"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Trong giải pháp đồng bộ sử dụng semaphore, để cho phép tối đa 5 tiến trình vào critical section, cần khởi tạo semaphore với giá trị bằng bao nhiêu?",
-    "options": ["4", "10", "5", "6"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Xét một hệ thống có 4 tiểu trình T1, T2, T3, T4. Quan hệ giữa các tiểu trình này được biểu diễn như sơ đồ bên dưới, với mũi tên từ tiểu trình (Tx) sang tiểu trình (Ty) có nghĩa là tiểu trình Tx phải kết thúc quá trình hoạt động của nó trước khi tiểu trình Ty bắt đầu thực thi. Giả sử tất cả các tiểu trình đã được khởi tạo và sẵn sàng để thực thi. Nếu sử dụng semaphore để đồng bộ hoạt động của các tiểu trình thì phải cần ít nhất bao nhiêu semaphore?",
-    "options": ["4", "1", "2", "3"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Tại sao việc bảo vệ các critical section trong hệ điều hành lại là vấn đề quan trọng?",
-    "options": [
-      "Để tăng số lượng người dùng có đặc quyền quản trị",
-      "Để tránh mất dữ liệu",
-      "Để cải thiện hiệu suất hệ thống",
-      "Để tránh race condition"
+      "Kích thước mỗi khối là bằng nhau và cố định. Kích thước này lớn hay nhỏ tùy vào tổng độ lớn của bộ nhớ chính.",
+      "Kích thước mỗi khối là cố định, và có thể khác nhau trong khoảng từ 512 bytes đến 16 Mbytes",
+      "Kích thước mỗi khối có thể co giãn, dao động từ 512 bytes đến 16 Mbytes",
+      "Kích thước mỗi khối là bằng nhau và cố định trong khoảng 512 bytes đến 16Mbytes"
     ],
     "correctAnswer": 3
-  },
-  {
-    "question": "Tại sao Progress là yêu cầu cần thiết cho lời giải bài toán critical section?",
-    "options": [
-      "Để cải thiện hiệu suất hệ thống",
-      "Để tránh race condition",
-      "Để đảm bảo rằng tất cả các luồng cuối cùng đều vào critical section của chúng",
-      "Để tránh mất dữ liệu"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Chọn phát biểu SAI trong các phát biểu sau?",
-    "options": [
-      "Một counting semaphore có giá trị tối đa bằng 1 thì cũng là một binary semaphore",
-      "Counting semaphore được sử dụng khi có nhiều tài nguyên (>1) phải tranh chấp",
-      "Binary semaphore và mutex là một",
-      "Có thể hiện thực counting semaphore bằng binary semaphore"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Yêu cầu nào sau đây là yêu cầu cho lời giải bài toán critical section?",
-    "options": [
-      "Busy waiting",
-      "Mutual exclusion",
-      "Priority inversion",
-      "Spin lock"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Lời giải dành cho vấn đề vùng tranh chấp cần phải thỏa mãn các tính chất nào trong các tính chất sau?\n\n(1) Khi một tiến trình P đang thực thi trong vùng tranh chấp của nó thì không có tiến trình Q nào khác đang thực thi trong vùng tranh chấp của Q.\n\n(2) Tất cả các tiến trình phải được đối xử như nhau.\n\n(3) Một tiến trình tạm dừng bên ngoài critical section không được ngăn cản các tiến trình khác vào critical section.\n\n(4) Mỗi tiến trình chỉ phải chờ để được vào vùng tranh chấp trong một khoảng thời gian có hạn định nào đó. Không xảy ra tình trạng đói tài nguyên (starvation).",
-    "options": [
-      "(2), (3), (4)",
-      "(1), (2), (4)",
-      "(1), (2), (3), (4)",
-      "(1), (3), (4)"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "question": "Khi các tiến trình cộng tác với nhau cần phải đảm bảo điều nào sau đây?",
-    "options": ["Tránh starvation", "Tránh deadlock", "Nhất quán dữ liệu"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Đoạn code mà ở đó khi tiến trình thực thi có thể truy cập và tác động lên các biến hay các file được chia sẻ được gọi là:",
-    "options": [
-      "Critical section",
-      "Race section",
-      "Sensitive section",
-      "Non-critical section"
-    ],
-    "correctAnswer": 0
   }
 ]
