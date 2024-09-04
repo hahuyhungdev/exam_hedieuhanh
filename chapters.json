@@ -10,5 +10,9 @@
   {
     "name": "Chương 4: Định thời CPU",
     "quizFile": "quizzes/quiz_data_chapter4.json"
+  },
+  {
+    "name": "Chương 5: Đồng bộ tiến trình",
+    "quizFile": "quizzes/quiz_data_chapter5.json"
   }
 ]
