@@ -3,13 +3,13 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #f0eee5;
 }
 
 #main-container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #fff;
+  background-image: linear-gradient(to bottom, #f8f8f7bf 0, #f8f8f700 90%);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -134,7 +134,7 @@ h1 {
 }
 
 .fill-in-blank {
-  width: 100%;
+  width: auto;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
