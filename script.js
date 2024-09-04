@@ -10,19 +10,23 @@ async function loadChapters() {
     populateChapterSelect();
   } catch (error) {
     console.error("Error loading chapters:", error);
-    const ErrorElement = document.createElement("div");
-    ErrorElement.classList.add("error");
-    ErrorElement.textContent = "Error loading chapters";
-    document.body.appendChild(ErrorElement);
+    const errorElement = document.createElement("div");
+    errorElement.classList.add("error");
+    errorElement.textContent =
+      "Error loading chapters. Please try again later.";
+    document.body.appendChild(errorElement);
   }
 }
 
 function populateChapterSelect() {
   const select = document.getElementById("chapter-select");
+  select.innerHTML = '<option value="" disabled selected>Chọn chương</option>';
+
   chapters.forEach((chapter, index) => {
     const option = document.createElement("option");
     option.value = index;
     option.textContent = chapter.name;
+    option.disabled = chapter.isActive !== "true";
     select.appendChild(option);
   });
 }
@@ -51,16 +55,8 @@ async function loadQuizData(chapterIndex) {
   }
 }
 function displayAllQuestions() {
-  console.log("Displaying questions");
-  console.log(quizData);
   const questionsContainer = document.getElementById("questions-container");
   questionsContainer.innerHTML = "";
-  userAnswers = [];
-
-  if (!quizData) {
-    console.error("Quiz data is not in the expected format:", quizData);
-    return;
-  }
 
   quizData.forEach((questionData, index) => {
     const questionElement = document.createElement("div");
@@ -75,16 +71,69 @@ function displayAllQuestions() {
     const optionsContainer = document.getElementById(
       `options-container-${index}`
     );
-    questionData.options.forEach((option, optionIndex) => {
-      const optionElement = document.createElement("div");
-      optionElement.classList.add("option");
-      optionElement.textContent = option;
-      optionElement.addEventListener("click", () =>
-        selectOption(index, optionIndex)
-      );
-      optionsContainer.appendChild(optionElement);
-    });
+
+    if (questionData.type === "fillInBlank") {
+      // Tạo input để điền khuyết
+      const inputElement = document.createElement("input");
+      inputElement.type = "text";
+      inputElement.classList.add("fill-in-blank");
+      inputElement.placeholder = "Nhập câu trả lời của bạn";
+      inputElement.addEventListener("input", (e) => {
+        userAnswers[index] = e.target.value;
+      });
+      optionsContainer.appendChild(inputElement);
+    } else {
+      // Tạo các lựa chọn như trước
+      questionData.options.forEach((option, optionIndex) => {
+        const optionElement = document.createElement("div");
+        optionElement.classList.add("option");
+        optionElement.textContent = option;
+        optionElement.addEventListener("click", () =>
+          selectOption(index, optionIndex)
+        );
+        optionsContainer.appendChild(optionElement);
+      });
+    }
   });
+
+  document.getElementById("quiz-container").style.display = "block";
+  document.getElementById("submit-btn").style.display = "block";
+}
+
+function selectOption(questionIndex, optionIndex) {
+  const optionsContainer = document.getElementById(
+    `options-container-${questionIndex}`
+  );
+  const options = optionsContainer.getElementsByClassName("option");
+
+  for (let option of options) {
+    option.classList.remove("selected");
+  }
+
+  options[optionIndex].classList.add("selected");
+  userAnswers[questionIndex] = optionIndex;
+}
+
+function submitQuiz() {
+  let correctAnswers = 0;
+  quizData.forEach((question, index) => {
+    if (question.type === "fillInBlank") {
+      // Kiểm tra câu trả lời điền khuyết
+      if (
+        userAnswers[index].toLowerCase().trim() ===
+        question.correctAnswer.toLowerCase().trim()
+      ) {
+        correctAnswers++;
+      }
+    } else {
+      // Kiểm tra câu trả lời lựa chọn
+      if (userAnswers[index] === question.correctAnswer) {
+        correctAnswers++;
+      }
+    }
+  });
+
+  // ... phần còn lại của hàm submitQuiz giữ nguyên
 }
 
 function selectOption(questionIndex, optionIndex) {
@@ -99,12 +148,20 @@ function selectOption(questionIndex, optionIndex) {
 function submitQuiz() {
   let correctAnswers = 0;
   quizData.forEach((question, index) => {
-    if (userAnswers[index] === question.correctAnswer) {
-      correctAnswers++;
+    if (question.type === "fillInBlank") {
+      if (
+        userAnswers[index].toLowerCase().trim() ===
+        question.correctAnswer.toLowerCase().trim()
+      ) {
+        correctAnswers++;
+      }
+    } else {
+      if (userAnswers[index] === question.correctAnswer) {
+        correctAnswers++;
+      }
     }
   });
 
-  // Lưu kết quả vào localStorage
   localStorage.setItem(
     "lastQuizResult",
     JSON.stringify({
@@ -155,18 +212,42 @@ function reviewLastQuiz() {
     const optionsContainer = document.getElementById(
       `review-options-container-${index}`
     );
-    questionData.options.forEach((option, optionIndex) => {
-      const optionElement = document.createElement("div");
-      optionElement.classList.add("option");
-      if (optionIndex === questionData.correctAnswer) {
-        optionElement.classList.add("correct");
-      }
-      if (optionIndex === lastQuizResult.userAnswers[index]) {
-        optionElement.classList.add("selected");
-      }
-      optionElement.textContent = option;
-      optionsContainer.appendChild(optionElement);
-    });
+
+    if (questionData.type === "fillInBlank") {
+      // Hiển thị câu trả lời điền khuyết
+      const answerElement = document.createElement("div");
+      answerElement.classList.add("fill-in-blank-review");
+
+      const userAnswer = lastQuizResult.userAnswers[index] || "";
+      const isCorrect =
+        userAnswer.toLowerCase().trim() ===
+        questionData.correctAnswer.toLowerCase().trim();
+
+      answerElement.innerHTML = `
+        <p>Câu trả lời của bạn: <span class="${
+          isCorrect ? "correct" : "incorrect"
+        }">${userAnswer}</span></p>
+        <p>Đáp án đúng: <span class="correct">${
+          questionData.correctAnswer
+        }</span></p>
+      `;
+
+      optionsContainer.appendChild(answerElement);
+    } else {
+      // Hiển thị câu hỏi lựa chọn
+      questionData.options.forEach((option, optionIndex) => {
+        const optionElement = document.createElement("div");
+        optionElement.classList.add("option");
+        if (optionIndex === questionData.correctAnswer) {
+          optionElement.classList.add("correct");
+        }
+        if (optionIndex === lastQuizResult.userAnswers[index]) {
+          optionElement.classList.add("selected");
+        }
+        optionElement.textContent = option;
+        optionsContainer.appendChild(optionElement);
+      });
+    }
   });
 
   document.getElementById("quiz-container").style.display = "none";

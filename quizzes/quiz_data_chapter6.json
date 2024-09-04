@@ -1,0 +1,165 @@
+[
+  {
+    "question": "“Không cho phép (ít nhất) một trong 4 điều kiện cần cho deadlock xảy ra” là đặc điểm của phương pháp giải quyết deadlock nào?",
+    "options": [
+      "Phát hiện deadlock và phục hồi",
+      "Ngăn deadlock",
+      "Tránh deadlock",
+      "Bỏ qua deadlock"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "(Có hình ảnh, bạn xem trên elearning câu này nhe ^^ ).Xét một hệ thống máy tính có 5 tiến trình: P1, P2, P3, P4, P5 và 4 loại tài nguyên: R1, R2, R3, R4. Tại thời điểm t0, trạng thái của hệ thống như sau: Yêu cầu cấp phát nào sau đây sẽ được đáp ứng?",
+    "options": [
+      "P1 yêu cầu thêm tài nguyên (1, 2, 2, 3)",
+      "P4 yêu cầu thêm tài nguyên (0, 1, 3, 3)",
+      "P5 yêu cầu thêm tài nguyên (2, 2, 1, 1)",
+      "P3 yêu cầu thêm tài nguyên (2, 1, 2, 0)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Chọn phát biểu đúng?",
+    "options": [
+      "Một tiến trình gọi là deadlock nếu nó bị trì hoãn một khoảng thời gian dài lặp đi lặp lại trong khi hệ thống đáp ứng cho những tiến trình khác",
+      "Một tiến trình gọi là deadlock nếu nó đang đợi một sự kiện mà sẽ xảy ra",
+      "Một tiến trình gọi là deadlock nếu nó đang đợi một sự kiện mà sẽ không bao giờ xảy ra"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Để phục hồi hệ thống bằng cách bẻ gãy chu trình deadlock, giải pháp nào sau đây có thể được thực hiện?",
+    "options": [
+      "Chấm dứt một hay nhiều tiến trình",
+      "Tạo thêm tiến trình mới",
+      "Thực hiện giải thuật Banker"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Giả sử phát hiện có một chu trình trong sơ đồ wait-for của hệ thống. Chọn phát biểu ĐÚNG trong các phát biểu bên dưới?",
+    "options": [
+      "Chưa thể xác định có deadlock xảy ra trong hệ thống",
+      "Deadlock chỉ xảy ra nếu sơ đồ wait-for của hệ thống có thêm một chu trình nữa",
+      "Chắc chắn có deadlock xảy ra trong hệ thống",
+      "Không có deadlock trong hệ thống"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Chọn phát biểu SAI trong các phát biểu bên dưới?",
+    "options": [
+      "Nếu đồ thị cấp phát tài nguyên chứa một chu trình và mỗi loại tài nguyên có nhiều thực thể thì có thể có deadlock xảy ra trong hệ thống",
+      "Nếu hệ thống đang ở trạng thái an toàn thì không có deadlock trong hệ thống",
+      "Nếu đồ thị cấp phát tài nguyên không chứa chu trình thì không có deadlock trong hệ thống",
+      "Nếu hệ thống đang ở trạng thái không an toàn thì chắc chắn có deadlock trong hệ thống"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Trong cấu trúc dữ liệu cho giải thuật Banker, ma trận nào chứa số lượng instance của các tài nguyên đã được cấp phát cho các tiến trình?",
+    "options": ["Available", "Max", "Need", "Allocation"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Cho các giải pháp sau\n\n(1) Báo người vận hành. (2) Cung cấp thêm tài nguyên.\n\n(3) Chấm dứt một hay nhiều tiến trình. (4) Lấy lại tài nguyên từ một hay nhiều tiến trình.\n\nKhi xảy ra deadlock, các giải pháp nào có thể được sử dụng để phục hồi hệ thống?",
+    "options": [
+      "(1), (2), (4)",
+      "(1), (3), (4)",
+      "(1), (2), (3)",
+      "(4), (2), (3)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là điều kiện cần để xảy ra deadlock?",
+    "options": [
+      "Tiến trình giữ ít nhất hai loại tài nguyên và chỉ hoàn trả khi đã sử dụng xong",
+      "Tồn tại một chu trình đợi tài nguyên giữa các tiến trình trong hệ thống",
+      "Một tiến trình đang giữ ít nhất một tài nguyên và đợi thêm tài nguyên do quá trình khác giữ",
+      "Ít nhất một tài nguyên được giữ theo chế độ không chia sẻ (nonsharable mode)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Trong cấu trúc dữ liệu cho giải thuật Banker, ma trận nào chứa số lượng instance của các tài nguyên cần được cấp phát cho các tiến trình?",
+    "options": ["Need", "Max", "Available", "Allocation"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Đối với giải pháp tránh deadlock, giải thuật Banker được áp dụng trong trường hợp nào?",
+    "options": [
+      "Mỗi tiến trình có một thực thể.",
+      "Mỗi tiến trình có nhiều thực thể.",
+      "Mỗi loại tài nguyên chỉ có một thực thể.",
+      "Mỗi loại tài nguyên có nhiều thực thể."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Cho 1 hệ thống có 3 tiến trình P1 đến P3 và 4 loại tài nguyên R1 (1), R2 (2), R3 (1) và R4 (4). P1 giữ 1 R2 và yêu cầu 1 R1; P2 giữ 1 R2, 1 R1 và yêu cầu 1 R3 và 1 R4; P3 giữ 1 R3 và yêu cầu 2 R4. Chuỗi an toàn của hệ thống là?",
+    "options": ["<P3, P2, P1>", "<P2, P1, P3>", "<P1, P2, P3>", "<P1, P3, P2>"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Điều kiện nào KHÔNG phải là điều kiện cần để xảy ra deadlock?",
+    "options": [
+      "Tài nguyên có thể bị hệ thống trưng dụng",
+      "Giữ và chờ cấp thêm tài nguyên",
+      "Loại trừ tương hỗ",
+      "Tồn tại chu trình đợi trong hệ thống"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Đối với giải pháp tránh deadlock, đồ thị wait-for được dùng trong trường hợp nào?",
+    "options": [
+      "Mỗi tiến trình có nhiều thực thể",
+      "Mỗi loại tài nguyên chỉ có một thực thể",
+      "Mỗi tiến trình có một thực thể",
+      "Mỗi loại tài nguyên có nhiều thực thể"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Chọn phương pháp đúng để ngăn deadlock xảy ra trong các phương pháp dưới đây?",
+    "options": [
+      "Thực hiện các giải thuật phát hiện deadlock thường xuyên",
+      "Ngăn ít nhất một trong 4 điều kiện cần để xảy ra deadlock",
+      "Chỉ cho phép máy tính hoạt động với một nửa số lượng tài nguyên đang có",
+      "Ngăn tất cả 4 điều kiện cần để xảy ra deadlock"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Trong giải thuật yêu cầu tài nguyên cho tiến trình Pi, nếu trạng thái của hệ thống là unsafe thì Pi phải đợt và phục hồi lại trạng thái, thì công thức nào sau đây KHÔNG phải là công thức để phục hồi lại hệ thống?",
+    "options": [
+      "Available = Available + Request(i)",
+      "Need(i) = Need(i) + Request(i)",
+      "Allocation(i) = Allocation(i) - Request(i)",
+      "Allocation(i) = Allocation(i) + Request(i)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Báo cho người vận hành “Các tiến trình cần cung cấp thông tin về tài nguyên nó cần để hệ thống cấp phát tài nguyên một cách thích hợp” là đặc điểm của phương pháp giải quyết deadlock nào?",
+    "options": [
+      "Bỏ qua deadlock",
+      "Phát hiện deadlock và phục hồi",
+      "Tránh deadlock",
+      "Ngăn deadlock"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là điều kiện cần để thực hiện giải thuật Banker?",
+    "options": [
+      "Khi tiến trình đã có được đầy đủ tài nguyên thì phải hoàn trả trong một khoảng thời gian hữu hạn nào đó",
+      "Khi yêu cầu tài nguyên, tiến trình không được giữ tài nguyên nào",
+      "Khi tiến trình yêu cầu tài nguyên thì có thể phải đợi",
+      "Mỗi tiến trình phải khai báo số lượng thực thể tối đa của mỗi loại"
+    ],
+    "correctAnswer": 1
+  }
+]

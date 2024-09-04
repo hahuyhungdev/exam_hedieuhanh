@@ -1,18 +1,37 @@
 [
   {
     "name": "Chương 2: hệ điều hành và kiến trúc",
-    "quizFile": "quizzes/quiz_data_chapter2.json"
+    "quizFile": "quizzes/quiz_data_chapter2.json",
+    "isActive": "true"
   },
   {
     "name": "Chương 3: Tiến trình",
-    "quizFile": "quizzes/quiz_data_chapter3.json"
+    "quizFile": "quizzes/quiz_data_chapter3.json",
+    "isActive": "true"
   },
   {
     "name": "Chương 4: Định thời CPU",
-    "quizFile": "quizzes/quiz_data_chapter4.json"
+    "quizFile": "quizzes/quiz_data_chapter4.json",
+    "isActive": "true"
   },
   {
     "name": "Chương 5: Đồng bộ tiến trình",
-    "quizFile": "quizzes/quiz_data_chapter5.json"
+    "quizFile": "quizzes/quiz_data_chapter5.json",
+    "isActive": "true"
+  },
+  {
+    "name": "Chương 6: Deadlock",
+    "quizFile": "quizzes/quiz_data_chapter6.json",
+    "isActive": "true"
+  },
+  {
+    "name": "Chương 7: Quản lý bộ nhớ",
+    "quizFile": "quizzes/quiz_data_chapter7.json",
+    "isActive": "true"
+  },
+  {
+    "name": "Chương 8: Bộ nhớ ảo",
+    "quizFile": "quizzes/quiz_data_chapter8.json",
+    "isActive": "false"
   }
 ]
