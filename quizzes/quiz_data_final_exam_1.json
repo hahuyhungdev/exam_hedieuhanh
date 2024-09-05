@@ -1,0 +1,258 @@
+[
+  {
+    "question": "Trong các điều kiện để xảy ra deadlock, loại trừ tương hỗ là tình trạng như thế nào? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Một tiến trình đang giữ ít nhất một tài nguyên và đợi thêm tài nguyên do tiến trình khác giữ.",
+      "B. Tài nguyên không thể bị lấy lại mà chỉ có thể được trả lại từ tiến trình đang giữ tài nguyên đó khi nó muốn.",
+      "C. Ít nhất một tài nguyên được giữ theo chế độ không chia sẻ.",
+      "D. Một tiến trình luôn luôn bị lấy lại tài nguyên mỗi khi deadlock xảy ra."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Sử dụng các dữ liệu sau để trả lời câu hỏi 2, 3: Giả sử một tiến trình được cấp 4 khung trang trong bộ nhớ vật lý và 7 trang trong bộ nhớ ảo. Tại thời điểm nạp tiến trình vào, 4 khung trang trên bộ nhớ vật lý này đang trống. Tiến trình truy xuất 7 trang (1, 2, 3, 4, 5, 6, 7) trong bộ nhớ ảo theo thứ tự như sau: 3 2 4 5 7 3 4 6 2 1 3 1 2 7 6 5. \n Tại thời điểm tiến trình truy xuất trang nhớ số 6 lần đầu tiên, trang nhớ nào sẽ được chọn làm trang hy sinh (victim page), nếu sử dụng giải thuật thay thế trang OPT? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 3", "B. 4", "C. 7", "D. 5"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Tại thời điểm tiến trình truy xuất trang nhớ số 1 lần đầu tiên, có tất cả bao nhiêu lỗi trang đã xảy ra (không tính lỗi trang xảy ra khi nạp trang nhớ số 1 vào), nếu sử dụng giải thuật thay thế trang FIFO? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 8", "B. 5", "C. 6", "D. 7"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Chọn phát biểu SAI trong các phát biểu sau? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Việc sử dụng khóa mutex có thể gây ra tình trạng busy waiting.",
+      "B. Đối với khóa mutex, các thao tác gọi acquire() hoặc release() phải được thực hiện đơn nguyên.",
+      "C. Binary semaphore có tác dụng giống với khóa mutex.",
+      "D. Đối với semaphore S, thao tác signal(S) được sử dụng khi muốn sử dụng tài nguyên."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Xét một hệ thống sử dụng kỹ thuật phân trang với bảng trang được lưu trữ trong bộ nhớ chính. Nếu sử dụng TLBs với hit ratio α = 0.95 và thời gian tìm trong TLBs (ε) là 21ns thì thời gian truy xuất bộ nhớ trong hệ thống (effective access time – EAT) là 210ns. Hỏi thời gian một chu kỳ truy xuất bộ nhớ (x) là bao nhiêu? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 189ns", "B. 180ns", "C. 360ns", "D. 199.5ns"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Loại địa chỉ bộ nhớ nào sau đây tương đương với địa chỉ luận lý? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Địa chỉ ảo",
+      "B. Địa chỉ vật lý",
+      "C. Địa chỉ thực",
+      "D. Địa chỉ tuyệt đối"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Biến điều kiện (condition variable) trong monitor KHÔNG có đặc điểm nào dưới đây? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Chỉ có thể thao tác lên biến điều kiện bằng 02 thao tác wait() và signal().",
+      "B. Khi thực hiện lệnh x.wait(), tiến trình sẽ được chuyển vào hàng đợi trên biến điều kiện x.",
+      "C. Biến điều kiện có thể được truy cập từ bên ngoài monitor.",
+      "D. Biến điều kiện được sử dụng nhằm cho phép tiến trình đợi “trong monitor”."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Giải thuật tránh deadlock giúp hệ thống không rơi vào deadlock bằng cách nào? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Bảo đảm hệ thống không đi đến trạng thái không an toàn.",
+      "B. Không cho phép ít nhất một trong 4 điều kiện cần của deadlock.",
+      "C. Gán một thứ tự cho tất cả các tài nguyên trong hệ thống.",
+      "D. Bắt buộc mỗi tiến trình yêu cầu toàn bộ tài nguyên cần thiết một lần."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Khuyết điểm của việc chuyển đổi địa chỉ lệnh và dữ liệu thành địa chỉ thực tại thời điểm biên dịch là gì? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Phải tiến hành nạp lại (reload) nếu thay đổi địa chỉ nền.",
+      "B. Phải trì hoãn quá trình chuyển đổi địa chỉ đến thời điểm thực thi.",
+      "C. Phải tiến hành biên dịch lại nếu thay đổi địa chỉ nạp chương trình.",
+      "D. Địa chỉ thực phải được tính toán vào thời điểm viết chương trình."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Mục tiêu cần đạt của các giải thuật thay thế trang là gì? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Xác định số khung trang cần cấp cho mỗi tiến trình.",
+      "B. Tăng số lượng trang nhớ được nạp vào bộ nhớ.",
+      "C. Số lượng lỗi trang nhỏ nhất.",
+      "D. Giảm tình trạng trì trệ do tiến trình không được cấp đủ số lượng khung trang."
+    ],
+    "correctAnswer": 2
+  },
+
+  {
+    "question": "Chọn phát biểu ĐÚNG về bộ nhớ ảo? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Nhờ sử dụng bộ nhớ ảo, một tiến trình có thể thực thi ngay cả khi kích thước của nó lớn hơn bộ nhớ thực.",
+      "B. Bộ nhớ ảo là một kỹ thuật cho phép tiến trình liên kết đến đến một module ngoài (external module) sau khi đã tạo xong load module.",
+      "C. Khi sử dụng bộ nhớ ảo, số lượng tiến trình trong bộ nhớ ít hơn.",
+      "D. Có hai kỹ thuật cài đặt bộ nhớ ảo là simple paging và demand segmentation."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Cơ chế 'chỉ khi nào cần được gọi đến thì một thủ tục mới được nạp vào bộ nhớ chính' được gọi là gì? (G2)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Static linking",
+      "B. Dynamic loading",
+      "C. Static fragmentation",
+      "D. Dynamic linking"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Để đảm bảo giải pháp Peterson hoạt động chính xác trên kiến trúc máy tính hiện đại, cần sử dụng công cụ nào sau đây? (G2)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Memory model",
+      "B. Memory barrier",
+      "C. Liveness",
+      "D. Disable interrupt"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Hiện tượng xảy ra khi các tiến trình cùng truy cập đồng thời vào dữ liệu chia sẻ được gọi là gì? (G2)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Race condition",
+      "B. Critical section",
+      "C. Mutual exclusion",
+      "D. Remainder section"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Trên các kiến trúc máy tính hiện đại, với các tiến trình đa tiểu trình, giải pháp đồng bộ Peterson có thể hoạt động không chính xác là do nguyên nhân nào? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Tốc độ thực thi của các tiểu trình khác nhau.",
+      "B. Vi xử lý và/hoặc trình biên dịch sắp xếp lại các thao tác (lệnh) mà độc lập với nhau, dẫn đến kết quả không nhất quán hoặc không dự đoán được.",
+      "C. Các lệnh hợp ngữ load và store (dùng khi cài đặt giải pháp Peterson) có thể bị cắt ngang.",
+      "D. Không thể vô hiệu hóa ngắt trên khi có nhiều hơn 2 tiểu trình đang thực thi trong vùng tranh chấp."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Một bạn sinh viên giải quyết bài toán đồng bộ bounded-buffer bằng cách sử dụng 2 semaphore empty (được khởi tạo bằng với kích thước của buffer) và full (được khởi tạo bằng 0) như sau:\n\nProducer:\nwait(empty);\n// add to buffer[]\ncount++;\nsignal(full);\n\nConsumer:\nwait(full);\n// remove from buffer[]\ncount--;\nsignal(empty);\n\nNhận xét nào sau đây là ĐÚNG về lời giải này? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Tình trạng busy waiting vẫn có thể xuất hiện.",
+      "B. Vùng tranh chấp đã bị bỏ qua nên kết quả đồng bộ không đảm bảo loại trừ tương hỗ.",
+      "C. Tiến trình Producer vẫn có thể thêm phần tử khi buffer đã đầy.",
+      "D. Lời giải này đáp ứng đầy đủ các yêu cầu của bài toán đồng bộ bounded-buffer."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Trên Linux, bộ nhớ vật lý được chia thành bao nhiêu vùng? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Chọn phát biểu ĐÚNG về đồ thị cấp phát tài nguyên? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Đồ thị cấp phát tài nguyên không có chu trình thì có thể có deadlock.",
+      "B. Tập đỉnh của đồ thị cấp phát tài nguyên bao gồm ba loại: các tiến trình, các loại tài nguyên và các thông số hệ thống.",
+      "C. Tập cạnh của đồ thị cấp phát tài nguyên bao gồm hai loại: cạnh cấp phát và cạnh yêu cầu, trong đó cạnh yêu cầu là cạnh có hướng từ loại tài nguyên sang tiến trình.",
+      "D. Đồ thị cấp phát tài nguyên có chu trình thì có deadlock nếu mỗi loại tài nguyên chỉ có một thực thể."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Khi deadlock xảy ra, nếu muốn phục hồi bằng cách chấm dứt tiến trình, cần thực hiện việc này như thế nào sao cho hiệu quả? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Chấm dứt toàn bộ tiến trình bị deadlock.",
+      "B. Chấm dứt lần lượt từng tiến trình cho đến khi không còn deadlock.",
+      "C. Chấm dứt các tiến trình không bị deadlock.",
+      "D. Chọn ngẫu nhiên một tiến trình bị deadlock và chỉ chấm dứt tiến trình này."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Thành phần hệ thống nào trong Windows 10 cung cấp các chức năng ảo hóa? (G2)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Hardware abstraction layer",
+      "B. Hyper-V Hypervisor",
+      "C. Secure kernel",
+      "D. Executive"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Tập các trang nhớ được tham chiếu gần nhau được gọi là gì? (G2)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Locality",
+      "B. Working set",
+      "C. Thrashing",
+      "D. Page faults"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Một hệ thống có bộ nhớ chính được phân chia thành các phân vùng cố định theo thứ tự như sau: 1 (405 KB), 2 (260 KB), 3 (350 KB), 4 (240 KB), 5 (365 KB), 6 (340 KB). Biết con trỏ đang nằm ở vùng nhớ 3, vùng nhớ 3 đã được cấp phát, các vùng nhớ khác vẫn còn trống. Nếu sử dụng giải thuật first-fit, tiến trình P và Q có kích thước 230 KB và 335 KB (theo thứ tự) sẽ được cấp phát các vùng nhớ nào? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Tiến trình P được cấp phát vùng nhớ 1 (405 KB), tiến trình Q được cấp phát vùng nhớ 3 (350 KB).",
+      "B. Tiến trình P được cấp phát vùng nhớ 2 (260 KB), tiến trình Q được cấp phát vùng nhớ 5 (365 KB).",
+      "C. Tiến trình P được cấp phát vùng nhớ 4 (240 KB), tiến trình Q được cấp phát vùng nhớ 6 (340 KB).",
+      "D. Tiến trình P được cấp phát vùng nhớ 1 (405 KB), tiến trình Q được cấp phát vùng nhớ 5 (365 KB)."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Chọn phát biểu SAI về đồ thị wait-for? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Các đỉnh trong đồ thị wait-for là các tiến trình.",
+      "B. Giải thuật phát hiện chu trình trong đồ thị wait-for có thời gian chạy là O(n^3), với n là số đỉnh của đồ thị.",
+      "C. Nếu đồ thị wait-for có chu trình thì tồn tại deadlock.",
+      "D. Cạnh trong đồ thị wait-for có hướng từ đỉnh Pi sang Pj nếu tiến trình Pi chờ tài nguyên từ tiến trình Pj."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Chọn phát biểu ĐÚNG về bài toán đồng bộ các triết gia ăn tối (Dining-Philosopher)? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Nếu chỉ cho phép tối đa 4 triết gia ngồi vào bàn thì có thể tránh được cả deadlock và starvation.",
+      "B. Không có giải pháp nào có thể tránh được deadlock.",
+      "C. Nếu chỉ cho phép triết gia cầm đũa khi cả 2 chiếc đũa đã sẵn sàng thì có thể tránh được deadlock nhưng starvation vẫn có thể xảy ra.",
+      "D. Nếu sử dụng giải pháp bất đối xứng (triết gia ngồi vị trí lẻ cầm đũa bên trái trước, rồi sau đó cầm đũa bên phải; trong khi triết gia ngồi vị trí chẵn cầm đũa bên phải trước, rồi sau đó cầm đũa bên trái) thì có thể tránh được starvation nhưng không tránh được deadlock."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Chọn phát biểu ĐÚNG về semaphore? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Giá trị của semaphore S, nếu là số dương, thể hiện số lượng tiến trình/tiểu trình đang đợi trên S.",
+      "B. Khi sử dụng semaphore, thứ tự của các lệnh wait() và signal() hay giá trị khởi tạo của semaphore có thể ảnh hưởng đến tính đúng đắn hay hiệu suất của chương trình.",
+      "C. Bản chất của semaphore là một biến số thực.",
+      "D. Khi cài đặt semaphore, đoạn mã định nghĩa các lệnh wait() và signal() không phải là vùng tranh chấp."
+    ],
+    "correctAnswer": 1
+  }
+]

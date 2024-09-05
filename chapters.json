@@ -33,5 +33,15 @@
     "name": "Chương 8: Bộ nhớ ảo",
     "quizFile": "quizzes/quiz_data_chapter8.json",
     "isActive": "true"
+  },
+  {
+    "name": "Cuối kỳ 1: 2023-2024",
+    "quizFile": "quizzes/quiz_data_final_exam_1.json",
+    "isActive": "true"
+  },
+  {
+    "name": "Cuối kỳ 2: 2023-2024",
+    "quizFile": "quizzes/quiz_data_final_exam_2.json",
+    "isActive": "false"
   }
 ]
