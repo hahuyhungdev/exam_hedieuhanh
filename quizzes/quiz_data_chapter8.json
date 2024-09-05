@@ -1,207 +1,77 @@
 [
   {
-    "question": "Chức năng chính của khóa mutex trong việc giải quyết bài toán critical section trong hệ điều hành là gì?",
+    "question": "Trong cơ chế phân trang, nếu trang được yêu cầu không có trong bộ nhớ chính thì chuyện gì sẽ xảy ra?",
     "options": [
-      "Cung cấp cơ chế chỉ cho phép một tiểu trình có thể truy cập tài nguyên được chia sẻ tại một thời điểm",
-      "Cung cấp cơ chế để nhiều tiểu trình chờ đợi vô thời hạn để truy cập tài nguyên được chia sẻ",
-      "Cung cấp cơ chế cho phép nhiều tiểu trình có thể đồng thời truy cập tài nguyên được chia sẻ",
-      "Cung cấp cơ chế để các tiểu trình trả lại tài nguyên được chia sẻ sau khi kết thúc"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Nhược điểm chính của thuật toán Peterson là gì?",
-    "options": [
-      "Nó không đảm bảo loại trừ tương hỗ",
-      "Nó chỉ phù hợp với các hệ thống có độ cạnh tranh thấp",
-      "Nó có thể khiến tiến trình gặp tình trạng deadlock hoặc đói",
-      "Không thể hoạt động trên các kiến trúc máy tính hiện đại nếu không có Memory Barrier"
+      "Tiến trình bị block lại, trang bị thiếu được nạp vào bộ nhớ chính, bảng trang được thiết lập lại, tiến trình thực hiện lại câu lệnh gây ra lỗi trang",
+      "Tiến trình bị block lại, một tín hiệu bẫy được gửi đến hệ điều hành, trang bị thiếu được nạp vào bộ nhớ chính, bảng trang được thiết lập lại, tiến trình thực hiện lại câu lệnh gây ra lỗi trang",
+      "Một tín hiệu bẫy được gửi đến hệ điều hành, trang bị thiếu được nạp vào bộ nhớ chính, bảng trang được thiết lập lại, tiến trình thực hiện lại câu lệnh gây ra lỗi trang",
+      "Một tín hiệu bẫy được gửi đến hệ điều hành, tiến trình bị block lại, trang bị thiếu được nạp vào bộ nhớ chính, bảng trang được thiết lập lại, tiến trình thực hiện lại câu lệnh gây ra lỗi trang"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "Thuật toán Peterson được sử dụng để làm gì trong hệ điều hành?",
+    "question": "Chiến lược thay thế trang nào sau đây được xem là tối ưu nhất?",
     "options": [
-      "Triển khai bộ nhớ ảo",
-      "Lập lịch tiến trình",
-      "Đảm bảo loại trừ tương hỗ",
-      "Hiện thực semaphore"
+      "Least Recently Used Algorithm",
+      "Optimal Algorithm",
+      "First-In-First-Out Algorithm",
+      "Shortest Remaining Time First Algorithm"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 1
   },
   {
-    "question": "Bản chất của semaphore khi hiện thực là gì?",
+    "question": "Ý nào sau đây KHÔNG phải là ưu điểm của việc sử dụng bộ nhớ ảo?",
     "options": [
-      "Một cấu trúc gồm 2 thuộc tính là: giá trị (kiểu dữ liệu số nguyên) và hàng đợi (kiểu dữ liệu là tiến trình)",
-      "Một hàng đợi có kiểu dữ liệu là tiến trình",
-      "Một biến số nguyên",
-      "Một biến số nguyên không âm"
+      "Cho phép sử dụng nhiều I/O hơn để load hoặc swap tiến trình",
+      "Cho phép nhiều tiến trình được thực thi đồng thời hơn",
+      "Cho phép tạo tiến trình hiệu quả hơn",
+      "Không gian địa chỉ luận lý có thể lớn hơn không gian địa chỉ vật lý"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "Nếu giá trị của semaphore s1 = -5 thì phát biểu nào sau đây là đúng?",
-    "options": [
-      "Không một tiến trình nào có thể thực hiện thao tác wait(s1) cho đến khi semaphore s1 lớn hơn 0",
-      "Có 5 tiến trình đang bị chặn trên hàng đợi của semaphore s1",
-      "Phải thực hiện thao tác signal(s1) 5 lần thì mới có thể thực hiện thao tác wait(s1)",
-      "Semaphore không được phép là số âm nên không thể có trường hợp semaphore s1 bằng -5"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Phát biểu nào sau đây là đúng về các thao tác đơn nguyên trong hệ điều hành?",
-    "options": [
-      "Các thao tác đơn nguyên yêu cầu sử dụng khóa hoặc semaphore để đảm bảo đồng bộ hóa",
-      "Các thao tác đơn nguyên đảm bảo rằng một tập hợp các hoạt động được thực hiện như một hành động duy nhất không thể chia nhỏ",
-      "Các thao tác đơn nguyên chỉ được sử dụng trong các hệ thống đơn bộ vi xử lý",
-      "Các thao tác đơn nguyên chỉ có thể được sử dụng cho các phép toán số học"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Giải pháp nào sau đây có thể được dùng để ngăn chặn race condition trong hệ điều hành?",
-    "options": [
-      "Giảm lượng bộ nhớ có sẵn cho mỗi tiến trình hoặc luồng.",
-      "Tăng độ ưu tiên của các tiến trình hoặc luồng cần truy cập tài nguyên chia sẻ.",
-      "Tăng số tiến trình hoặc luồng có thể truy cập tài nguyên chia sẻ.",
-      "Triển khai các cơ chế đồng bộ hóa phù hợp."
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "question": "Giải pháp đồng bộ của Peterson là sự kết hợp của:",
-    "options": [
-      "Biến semaphore kiểm tra số lần thực thi và mảng order[] kiểm tra thứ tự",
-      "Biến turn kiểm tra lượt và mảng flag[] kiểm tra tính sẵn sàng",
-      "Biến flag kiểm tra lượt và mảng priority[] kiểm tra độ ưu tiên",
-      "Biến turn kiểm tra lượt và mảng order[] kiểm tra thứ tự"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Phát biểu nào đúng khi nói về thuật toán Peterson?",
-    "options": [
-      "Thuật toán Peterson chỉ có thể được sử dụng với hai tiến trình",
-      "Thuật toán Peterson được sử dụng để tránh deadlock",
-      "Thuật toán Peterson được sử dụng để tránh tình trạng đói (starvation)",
-      "Thuật toán Peterson yêu cầu hỗ trợ phần cứng cho các thao tác đơn nguyên"
-    ],
+    "question": "Giả sử một tiến trình được cấp 3 khung trang trong bộ nhớ vật lý và 7 trang trong bộ nhớ ảo. Tại thời điểm tiến trình truy xuất trang nhớ số 6 lần đầu tiên, trang nhớ nào bị thay ra để nạp trang số 6 vào nếu áp dụng chiến lược LRU?",
+    "options": ["Trang số 7", "Trang số 1", "Trang số 5", "Trang số 2"],
     "correctAnswer": 0
   },
   {
-    "question": "Race condition là gì?",
+    "question": "Giả sử một tiến trình được cấp 4 khung trang trong bộ nhớ vật lý và 8 trang trong bộ nhớ ảo. Nếu áp dụng chiến lược OPT, có tổng cộng  ___________ lỗi trang sẽ xuất hiện.",
+    "type": "fillInBlank",
+    "correctAnswer": "11"
+  },
+  {
+    "question": "Các chiến lược thay thế trang nào sau đây bị vướng phải nghịch lý Belady?",
     "options": [
-      "Vấn đề mà một tiến trình hoặc luồng bị kẹt trong một vòng lặp vô hạn.",
-      "Tình trạng mà một tiến trình hoặc luồng bị đình trệ do lỗi bộ nhớ.",
-      "Tình huống mà hai hoặc nhiều tiến trình hoặc luồng truy cập tài nguyên hoặc dữ liệu chia sẻ cùng một lúc.",
-      "Tình trạng mà một tiến trình hoặc luồng không thể truy cập tài nguyên vì nó đã được sử dụng."
+      "Tất cả đều đúng",
+      "Optimal Algorithm",
+      "First-In-First-Out Algorithm",
+      "Least Recently Used Algorithm"
     ],
     "correctAnswer": 2
   },
   {
-    "question": "Đồng bộ hóa đóng vai trò gì cho lời giải bài toán critical section?",
+    "question": "Trong kỹ thuật phân trang theo yêu cầu, số lượng lỗi trang sẽ bị ảnh hưởng bởi CÁC yếu tố nào sau đây?",
     "options": [
-      "Đảm bảo loại trừ tương hỗ (mutual exclusion)",
-      "Cải thiện hiệu suất hệ thống",
-      "Cung cấp sự công bằng trong phân bổ tài nguyên",
-      "Ngăn chặn tình trạng deadlock"
+      "Tốc độ truy xuất của bộ nhớ chính",
+      "Tốc độ xử lý của CPU",
+      "Chiến lược thay thế trang và Số khung trang tiến trình được cấp phát",
+      "Tốc độ truy xuất của bộ nhớ chính và Tốc độ xử lý của CPU"
     ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Thuật ngữ nào sau đây mô tả trạng thái tiến trình truy xuất trang mà trang không có trong bộ nhớ chính?",
+    "options": ["Page fault", "Page lagging", "Page missing", "Page error"],
     "correctAnswer": 0
   },
   {
-    "question": "Chọn phát biểu ĐÚNG trong các phát biểu bên dưới?",
-    "options": [
-      "Các đoạn mã nguồn có chứa các thao tác lên dữ liệu chia sẻ trong mỗi tiến trình được gọi là race condition",
-      "Khi thực hiện đồng bộ sử dụng semaphore, các tiến trình sẽ từ bỏ CPU khi chưa được vào critical section",
-      "Giải pháp Peterson có thể hiện thực với n tiến trình",
-      "Một trong những yêu cầu đặt ra đối với bài toán Producer – Consumer là Consumer không được đọc dữ liệu từ buffer đã đầy"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Critical section trong hệ điều hành là gì?",
-    "options": [
-      "Vùng code được dùng chung bởi hai hay nhiều tiến trình",
-      "Vùng code tác động lên dữ liệu được chia sẻ giữa hai hay nhiều tiến trình",
-      "Data section được cấp phát chung cho hai hay nhiều tiến trình",
-      "Vùng nhớ chứa dữ liệu được chia sẻ bởi hai hay nhiều tiến trình"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Trong giải pháp đồng bộ sử dụng semaphore, để cho phép tối đa 5 tiến trình vào critical section, cần khởi tạo semaphore với giá trị bằng bao nhiêu?",
-    "options": ["4", "10", "5", "6"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Xét một hệ thống có 4 tiểu trình T1, T2, T3, T4. Quan hệ giữa các tiểu trình này được biểu diễn như sơ đồ bên dưới, với mũi tên từ tiểu trình (Tx) sang tiểu trình (Ty) có nghĩa là tiểu trình Tx phải kết thúc quá trình hoạt động của nó trước khi tiểu trình Ty bắt đầu thực thi. Giả sử tất cả các tiểu trình đã được khởi tạo và sẵn sàng để thực thi. Nếu sử dụng semaphore để đồng bộ hoạt động của các tiểu trình thì phải cần ít nhất bao nhiêu semaphore?",
-    "options": ["4", "1", "2", "3"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Tại sao việc bảo vệ các critical section trong hệ điều hành lại là vấn đề quan trọng?",
-    "options": [
-      "Để tăng số lượng người dùng có đặc quyền quản trị",
-      "Để tránh mất dữ liệu",
-      "Để cải thiện hiệu suất hệ thống",
-      "Để tránh race condition"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "question": "Tại sao Progress là yêu cầu cần thiết cho lời giải bài toán critical section?",
-    "options": [
-      "Để cải thiện hiệu suất hệ thống",
-      "Để tránh race condition",
-      "Để đảm bảo rằng tất cả các luồng cuối cùng đều vào critical section của chúng",
-      "Để tránh mất dữ liệu"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Chọn phát biểu SAI trong các phát biểu sau?",
-    "options": [
-      "Một counting semaphore có giá trị tối đa bằng 1 thì cũng là một binary semaphore",
-      "Counting semaphore được sử dụng khi có nhiều tài nguyên (>1) phải tranh chấp",
-      "Binary semaphore và mutex là một",
-      "Có thể hiện thực counting semaphore bằng binary semaphore"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Yêu cầu nào sau đây là yêu cầu cho lời giải bài toán critical section?",
-    "options": [
-      "Busy waiting",
-      "Mutual exclusion",
-      "Priority inversion",
-      "Spin lock"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "Lời giải dành cho vấn đề vùng tranh chấp cần phải thỏa mãn các tính chất nào trong các tính chất sau?\n\n(1) Khi một tiến trình P đang thực thi trong vùng tranh chấp của nó thì không có tiến trình Q nào khác đang thực thi trong vùng tranh chấp của Q.\n\n(2) Tất cả các tiến trình phải được đối xử như nhau.\n\n(3) Một tiến trình tạm dừng bên ngoài critical section không được ngăn cản các tiến trình khác vào critical section.\n\n(4) Mỗi tiến trình chỉ phải chờ để được vào vùng tranh chấp trong một khoảng thời gian có hạn định nào đó. Không xảy ra tình trạng đói tài nguyên (starvation).",
-    "options": [
-      "(2), (3), (4)",
-      "(1), (2), (4)",
-      "(1), (2), (3), (4)",
-      "(1), (3), (4)"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "question": "Khi các tiến trình cộng tác với nhau cần phải đảm bảo điều nào sau đây?",
-    "options": ["Tránh starvation", "Tránh deadlock", "Nhất quán dữ liệu"],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Đoạn code mà ở đó khi tiến trình thực thi có thể truy cập và tác động lên các biến hay các file được chia sẻ được gọi là:",
-    "options": [
-      "Critical section",
-      "Race section",
-      "Sensitive section",
-      "Non-critical section"
-    ],
+    "question": "Giả sử một tiến trình được cấp 3 khung trang trong bộ nhớ vật lý và 7 trang trong bộ nhớ ảo. Tại thời điểm tiến trình truy xuất trang nhớ số 7 lần đầu tiên, hệ thống đã xảy ra bao nhiêu lỗi trang (không tính lỗi trang khi nạp trang số 7 vào) nếu sử dụng giải thuật LRU?",
+    "options": ["7 lỗi trang", "8 lỗi trang", "5 lỗi trang", "6 lỗi trang"],
     "correctAnswer": 0
+  },
+  {
+    "question": "Nghịch lý Belady mô tả hiện tượng khi số lượng khung trang... thì số lượng lỗi trang...",
+    "options": ["tăng / giảm", "giảm / tăng", "tăng / tăng", "giảm / giảm"],
+    "correctAnswer": 2
   }
 ]
