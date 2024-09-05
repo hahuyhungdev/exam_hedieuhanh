@@ -42,6 +42,6 @@
   {
     "name": "Cuối kỳ 2: 2023-2024",
     "quizFile": "quizzes/quiz_data_final_exam_2.json",
-    "isActive": "false"
+    "isActive": "true"
   }
 ]

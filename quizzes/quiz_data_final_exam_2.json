@@ -1,0 +1,142 @@
+[
+  {
+    "question": "Công cụ nào dưới đây KHÔNG được dùng để chuyển dữ liệu giữa các tiến trình trên Linux? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. Pipe", "B. Network", "C. Shared memory", "D. Signal"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là một chuỗi an toàn của hệ thống? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. <P4, P5, P2, P3, P1>",
+      "B. <P2, P3, P1, P4, P5>",
+      "C. <P3, P1, P2, P5, P4>",
+      "D. <P1, P5, P4, P2, P3>"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Chọn phát biểu SAI về semaphore? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Nếu giá trị của semaphore S bằng – 4 thì có 4 tiến trình đang bị blocked trong hàng đợi của S.",
+      "B. Thao tác signal() sẽ được sử dụng khi muốn sử dụng tài nguyên.",
+      "C. Tiến trình sẽ phải chờ khi thực hiện thao tác wait() lên semaphore đang có giá trị không dương.",
+      "D. Semaphore được phân loại thành counting semaphore và binary semaphore."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là điều kiện cần để xảy ra deadlock? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Một tiến trình đang giữ ít nhất một tài nguyên và đợi thêm tài nguyên do tiến trình khác giữ.",
+      "B. Tài nguyên không thể bị lấy lại mà chỉ có thể được trả lại từ tiến trình đang giữ tài nguyên đó khi nó muốn.",
+      "C. Ít nhất một tài nguyên được giữ theo chế độ không chia sẻ.",
+      "D. Mỗi tiến trình chỉ có thể yêu cầu thực thể của một loại tài nguyên theo thứ tự tăng dần của loại tài nguyên."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Giải pháp đồng bộ nào sau đây không cần sự hỗ trợ từ hệ điều hành? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Semaphore",
+      "B. Monitor",
+      "C. Mutex locks",
+      "D. Giải thuật Peterson"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Sử dụng các dữ liệu sau để trả lời câu hỏi 6, 7:\nGiả sử một tiến trình được cấp 5 khung trang trong bộ nhớ vật lý và 7 trang trong bộ nhớ ảo. Tại thời điểm nạp tiến trình vào, 5 khung trang trên bộ nhớ vật lý này đang trống. Tiến trình truy xuất 7 trang (1, 2, 3, 4, 5, 6, 7) trong bộ nhớ ảo theo thứ tự như sau:\n1 2 1 5 4 3 7 2 6 5 3 4\n\nTại thời điểm tiến trình truy xuất trang nhớ số 7 lần đầu tiên, trang nhớ nào sẽ được chọn làm trang hy sinh (victim page), nếu sử dụng giải thuật thay thế trang LRU? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 1", "B. 2", "C. 5", "D. 4"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Có tất cả bao nhiêu lỗi trang xảy ra nếu tiến trình sử dụng giải thuật thay thế trang OPT? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 7"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Xét bài toán Reader-Writer có sử dụng 2 semaphore (rw_mutex và mutex) để đồng bộ. Các semaphore được khởi tạo bằng 1. Cho mã nguồn của các tiến trình Reader, Writer như bên dưới. Biết rằng giải pháp này ưu tiên Reader và readcount là biến chia sẻ được khởi tạo bằng 0.\n\nChọn phát biểu SAI trong các phát biểu dưới đây? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Nếu một Writer đang ở trong vùng tranh chấp và có n Readers đang đợi thì một Reader được xếp trong hàng đợi của rw_mutex và n − 1 Reader kia trong hàng đợi của mutex.",
+      "B. Khi Writer thực thi signal(rw_mutex), hệ thống có thể phục hồi thực thi của một trong các Reader đang đợi hoặc Writer đang đợi.",
+      "C. Các lệnh readcount++ và readcount-- đều là các vùng tranh chấp.",
+      "D. Semaphore mutex được sử dụng để bảo đảm tính chất loại trừ tương hỗ đối với các Writer."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Chiến lược next-fit sẽ chọn khối nhớ trống như thế nào? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Chọn khối nhớ trống nhỏ nhất.",
+      "B. Chọn khói nhớ trống phù hợp đầu tiên kể từ đầu bộ nhớ.",
+      "C. Chọn khối nhớ trống phù hợp đầu tiên kể từ vị trí cấp phát cuối cùng.",
+      "D. Chọn khối nhớ trống lớn nhất."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Hệ thống nào trong các hệ thống bên dưới có deadlock xảy ra? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "(1) Hệ thống có 3 tiến trình P1, P2, P3 và 2 loại tài nguyên R1, R2 – mỗi loại có 1 thực thể. P1 giữ 1 R1 và yêu cầu 1 R2, P2 giữ 1 R2, P3 yêu cầu 1 R2.",
+      "(2) Hệ thống có 3 tiến trình P1, P2, P3 và 3 loại tài nguyên R1, R2, R3 – mỗi loại có 1 thực thể. P1 giữ 1 R1 và yêu cầu 1 R3, P2 giữ 1 R2 và yêu cầu 1 R3, P3 giữ 1 R3 và yêu cầu 1 R1.",
+      "(3) Hệ thống có 3 tiến trình P1, P2, P3 và 2 loại tài nguyên R1, R2 – mỗi loại có 2 thực thể. P1 yêu cầu 1 R1 và 1 R2, P2 giữ 1 R1 và 1 R2, P3 giữ 1 R1 và yêu cầu 1 R2."
+    ],
+    "correctAnswer": 2,
+    "choices": ["A. (1)", "B. (1) và (2)", "C. (2)", "D. (3)"]
+  },
+  {
+    "question": "Chọn phát biểu SAI về việc cấp phát khung trang cho tiến trình? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Nếu hệ điều hành cấp ít khung trang cho tiến trình thì sẽ làm xuất hiện nhiều lỗi trang.",
+      "B. Nếu hệ điều hành cấp nhiều khung trang cho tiến trình thì sẽ làm giảm mức độ đa chương.",
+      "C. Số lượng khung trang được cấp cho mỗi tiến trình sẽ không thay đổi nếu sử dụng chiến lược cấp phát tĩnh.",
+      "D. Khi sử dụng chiến lược cấp phát động, nếu tỉ lệ lỗi trang cao, hệ điều hành sẽ giảm bớt số lượng khung trang được cấp."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Lựa chọn nào dưới đây KHÔNG phải là một yêu cầu của bài toán bounded-buffer? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Producer và Consumer không được thao tác trên buffer cùng lúc.",
+      "B. Producer không được ghi dữ liệu vào buffer đã đầy.",
+      "C. Consumer không được đọc dữ liệu từ buffer đang trống.",
+      "D. Luôn có ít nhất một Producer hoặc Consumer thao tác trên buffer tại bất cứ thời điểm nào."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Xét một không gian địa chỉ ảo có 256 trang, mỗi trang có kích thư ớc 4096 byte được ánh xạ vào bộ nhớ vật lý có 64 khung trang \n \nĐịa chỉ vật lý gồm bao nhiêu bit? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 18", "B. 12", "C. 20", "D. 8"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Xét một không gian địa chỉ ảo có 256 trang, mỗi trang có kích thư ớc 4096 byte được ánh xạ vào bộ nhớ vật lý có 64 khung trang \n \n Kích thước bảng phân trang là bao nhiêu byte, nếu mỗi mục (entry) trong bảng phân trang cần 2 byte? (G1)",
+    "type": "multipleChoice",
+    "options": ["A. 128", "B. 4096", "C. 512", "D. 32"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Memory barrier là gì? (G1)",
+    "type": "multipleChoice",
+    "options": [
+      "A. Mô hình hoạt động của bộ nhớ trong hệ thống.",
+      "B. Một chỉ thị mà bắt buộc mọi thay đổi trong bộ nhớ phải được truyền tải đến tất cả bộ xử lý khác.",
+      "C. Tập hợp các quy tắc và ràng buộc cho việc sử dụng bộ nhớ.",
+      "D. Cơ chế cho phép vi xử lý hoặc trình biên dịch sắp xếp lại các thao tác độc lập với nhau trên bộ nhớ."
+    ],
+    "correctAnswer": 1
+  }
+]

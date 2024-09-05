@@ -43,6 +43,10 @@ async function loadQuizData(chapterIndex) {
       throw new Error("Failed to load quiz data");
     }
     quizData = await response.json();
+
+    // Shuffle the questions before displaying
+    quizData = shuffleArray(quizData);
+
     console.log("Quiz data loaded:", quizData);
     displayAllQuestions();
     document.getElementById("quiz-container").style.display = "block";
@@ -54,6 +58,7 @@ async function loadQuizData(chapterIndex) {
     document.getElementById("submit-btn").style.display = "none";
   }
 }
+
 function displayAllQuestions() {
   const questionsContainer = document.getElementById("questions-container");
   questionsContainer.innerHTML = "";
@@ -256,6 +261,21 @@ function reviewLastQuiz() {
   document.getElementById("results").style.display = "none";
   reviewContainer.style.display = "block";
 }
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadChapters();
   document.getElementById("chapter-select").addEventListener("change", (e) => {
