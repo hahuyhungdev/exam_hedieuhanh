@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Điều nào sau đây KHÔNG phải là phương pháp phát hiện chuyển động?",
+    "options": ["Tần số vô tuyến", "Độ ẩm", "Từ tính", "Hồng ngoại"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Điều nào có thể được sử dụng để bảo mật thiết bị di động?",
+    "options": [
+      "Mobile connector",
+      "Cable lock",
+      "Mobile chain",
+      "Security tab"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Bước đầu tiên trong việc bảo mật hệ điều hành là gì?",
+    "options": [
+      "Phát triển chính sách bảo mật",
+      "Triển khai quản lý bản vá",
+      "Cấu hình cài đặt và bảo mật của hệ điều hành",
+      "Thực hiện baselining phần mềm máy chủ"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Điều nào sau đây KHÔNG phải là cài đặt Microsoft Windows có thể được định cấu hình thông qua mẫu bảo mật?",
+    "options": [
+      "Chính sách tài khoản",
+      "Quyền của người sử dụng",
+      "Ánh xạ bàn phím (Keyboard Mapping)",
+      "Dịch vụ hệ thống"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Điều nào cho phép thiết lập một cấu hình duy nhất và sau đó triển khai áp dụng cho nhiều hoặc tất cả người dùng?",
+    "options": [
+      "Thư mục hoạt động (Active Directory)",
+      "Chính sách nhóm (Group Policy)",
+      "Sao chép theo dõi (Snap-In Replication - SIR)",
+      "Cấu hình lệnh (Command Configuration)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Tuyên bố nào về phòng ngừa mất dữ liệu (data loss prevention - DLP) KHÔNG đúng?",
+    "options": [
+      "Nó chỉ có thể bảo vệ dữ liệu trong khi nó nằm trên máy tính cá nhân của người dùng",
+      "Nó có thể quét dữ liệu trên đĩa DVD",
+      "Nó có thể đọc bên trong các tập tin nén",
+      "Vi phạm chính sách có thể tạo báo cáo hoặc chặn dữ liệu"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Một typical configuration baseline sẽ bao gồm mỗi phần sau NGOẠI TRỪ:",
+    "options": [
+      "Thay đổi bất kỳ cài đặt mặc định nào không an toàn",
+      "Loại bỏ mọi phần mềm không cần thiết",
+      "Cho phép các tính năng bảo mật của hệ điều hành",
+      "Thực hiện đánh giá rủi ro an ninh"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Cái nào sau đây là danh sách của người gửi email được chấp thuận?",
+    "options": ["Blacklist", "Whitelist", "Greylist", "Greenlist"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "FTP sử dụng cổng gì?",
+    "options": ["21", "25", "23", "80"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Cổng nào được HTTPS sử dụng?",
+    "options": ["53", "80", "443", "21"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Giao thức SSL dùng để làm gì?",
+    "options": [
+      "Cung cấp bảo mật cho dữ liệu lưu thông trên dịch vụ HTTP",
+      "Cung cấp bảo mật cho thư điện tử",
+      "Cung cấp bảo mật cho Web",
+      "Cung cấp bảo mật cho xác thực người dùng vào các hệ thống vận hành trên Flatform Window"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Các lỗ hổng bảo mật trên hệ thống là do đâu?",
+    "options": [
+      "Dịch vụ cung cấp",
+      "Bản thân hệ điều hành",
+      "Con người tạo ra",
+      "Dịch vụ cung cấp, bản thân hệ điều hành và con người tạo ra"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Công cụ/cơ chế bảo mật cho mạng không dây là gì?",
+    "options": ["SSL", "TSL", "Giao thức PGP", "WEP"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Thiết bị nào cho phép ta kết nối đến một mạng LAN của công ty qua Internet thông qua một kênh được mã hóa an toàn?",
+    "options": ["VPN", "WEP", "Modem", "Telnet"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Tính năng bảo mật nào KHÔNG cung cấp tính năng cân bằng tải?",
+    "options": [
+      "Ẩn các trang HTTP lỗi",
+      "Xóa tiêu đề định danh máy chủ khỏi HTTP responses",
+      "Lọc các gói dựa trên cài đặt giao thức",
+      "Tấn công từ chối dịch vụ (dos)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Điều nào trong số này KHÔNG phải là một cuộc tấn công chống lại một công tắc?",
+    "options": [
+      "Mạo danh địa chỉ MAC",
+      "ARP poisoning",
+      "MAC flooding",
+      "Mạo danh địa chỉ ARP"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Câu nào về network address translation (NAT) là đúng?",
+    "options": [
+      "Nó có thể là trạng thái trạng thái hoặc không trạng thái",
+      "Nó thay thế địa chỉ MAC cho địa chỉ IP",
+      "Nó loại bỏ các địa chỉ riêng khi gói rời khỏi mạng",
+      "Nó chỉ có thể được tìm thấy trên các bộ định tuyến lõi"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Cái nào có thể được sử dụng để ẩn thông tin về mạng nội bộ ngoại trừ?",
+    "options": [
+      "Protocol analyzer",
+      "Subnetting",
+      "Proxy server",
+      "Network address translation (NAT)"
+    ],
+    "correctAnswer": 0
+  }
+]

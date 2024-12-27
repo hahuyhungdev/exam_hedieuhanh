@@ -1,0 +1,137 @@
+[
+  {
+    "question": "Để đảm bảo kết nối mật mã an toàn giữa trình duyệt web và máy chủ web, điều nào sẽ được sử dụng?",
+    "options": [
+      "Web digital certificate",
+      "Email web certificate",
+      "Server digital certificate",
+      "Personal digital certificate"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Một thực thể cấp chứng chỉ kỹ thuật số là gì?",
+    "options": [
+      "Tổ chức phát hành chứng chỉ (Certificate Authority - CA)",
+      "Cơ quan Chữ ký (Signature Authority - SA)",
+      "Người ký chứng chỉ (Certificate Signatory - CS)",
+      "Bộ ký số (Digital Signer - DS)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Điều nào là các khóa đối xứng để mã hóa và giải mã thông tin được trao đổi trong phiên và để xác minh tính toàn vẹn của nó?",
+    "options": [
+      "Session keys",
+      "Encrypted signatures",
+      "Digital digests",
+      "Digital certificates"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Thuật toán chia Euclid mở rộng dùng để làm gì?",
+    "options": [
+      "Tính nhanh một lũy thừa với số lớn",
+      "Tính phần tử nghịch đảo của một số theo module nào đó",
+      "Kiểm tra nhanh một số nguyên tố lớn",
+      "Tìm đồng dư của một số theo module nào đó"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Một hệ thống mã hóa quy ước dùng khoá dài 128 bit. Nếu dùng phương pháp tấn công brute force thì phải thử trung bình bao nhiêu lần và thời gian cần thiết để thực hiện nếu tốc độ xử lý là một tỉ lần trong một giây?",
+    "options": [
+      "Phải thử 2^128 lần, thời gian thử là 5,4 * 10^18 năm",
+      "Phải thử 2^64 lần, thời gian thử là 5,4 * 10^18 năm",
+      "Phải thử 2^127 lần, thời gian thử là 5,4 * 10^18 năm",
+      "Phải thử 2^128 lần, thời gian thử là 18 năm"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Chữ ký điện tử (số) là gì?",
+    "options": [
+      "Các đặc tính của mật mã, được sử dụng để biến đổi mã hóa thông tin",
+      "Họ tên người gửi được ghi ở dạng điện tử và kết nối với thông tin",
+      "Biến đổi mã hóa văn bản được gắn vào văn bản cho phép người nhận kiểm tra tác giả và tính đích thực của thông tin",
+      "Tất cả đều sai"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "RSA là giải thuật gì?",
+    "options": [
+      "Mã hóa công khai",
+      "Là tên của một tổ chức quốc tế về mã hóa",
+      "Mã hóa khóa bí mật",
+      "Tất cả đều sai"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Cho bản rõ “center” khóa k=5. Khi mã hóa bản rõ với khóa k theo hệ mã dịch chuyển ta sẽ thu được bản mã nào sau đây?",
+    "options": ["HGRGXV", "GRXVCN", "VCMHGR", "XVHGGR"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Người A chọn các thông số p =17, q = 3, e = 5. Hỏi khóa công khai của A là gì?",
+    "options": ["(51, 5)", "(32, 5)", "(17, 3)", "(17, 3, 5)"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "DES là viết tắt của từ nào?",
+    "options": [
+      "Data encryption system",
+      "Data encryption standard",
+      "Data encoding standard",
+      "Data encryption signature"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Phương thức nào trong số này tốt nhất mô tả một chữ ký điện tử?",
+    "options": [
+      "Một phương thức chuyển giao một chữ ký viết tay vào một tài liệu điện tử",
+      "Một phương pháp mã hóa thông tin bí mật",
+      "Một phương pháp để cung cấp một chữ ký điện tử và mã hóa",
+      "Một phương pháp để cho người nhận của tin nhắn chứng minh nguồn gốc và sự toàn vẹn của một tin nhắn"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Cho bản rõ x = 20, khóa công khai n = 161, e = 35. Khi mã hóa bản rõ x với khóa trên theo hệ mã RSA ta sẽ thu được bản mã nào sau đây?",
+    "options": ["13", "16", "83", "186"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Chức năng của các hàm băm (hash function) là gì?",
+    "options": [
+      "Tạo ra một khối thông tin ngắn cố định từ một khối thông tin gốc lớn hơn",
+      "Mật mã hóa thông tin",
+      "Xác thực nguồn gốc thông tin",
+      "Ngăn chặn việc phủ nhận hành vi của chủ thể thông tin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Trong giải thuật mã hóa DES thực hiện bao nhiêu vòng lặp?",
+    "options": ["6", "8", "15", "16"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Điều nào sau đây KHÔNG phải là activity phase control?",
+    "options": [
+      "Compensating control",
+      "Detective control",
+      "Resource control",
+      "Deterrent control"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Điều nào sau đây KHÔNG phải là phương pháp phát hiện chuyển động?",
+    "options": ["Tần số vô tuyến", "Độ ẩm", "Từ tính", "Hồng ngoại"],
+    "correctAnswer": 1
+  }
+]

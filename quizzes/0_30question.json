@@ -1,0 +1,198 @@
+[
+  {
+    "question": "Thế nào là tính bảo mật của hệ thống thông tin?",
+    "options": [
+      "Tính bảo mật của hệ thống thông tin là đặt tính của hệ thống trong đó tất cả thông tin lưu trữ dưới dạng mật mã"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Các cơ chế đảm bảo tính toàn vẹn của thông tin được chia thành mấy loại?",
+    "options": [
+      "Các cơ chế ngăn cản: ngăn cản các hành vi trái phép làm thay đổi nội dung và nguồn gốc của thông tin",
+      "Các cơ chế phát hiện: giám sát và thông báo khi có các thay đổi diễn ra trên thông tin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Các nguy cơ nào có thể ảnh hưởng đến tính khả dụng của hệ thống thông tin?",
+    "options": [
+      "Thiết bị không an toàn",
+      "Các tấn công từ chối dịch vụ (DoS và DDoS)",
+      "Virus và các loại phần mềm phá hoại khác trên máy tính",
+      "Tất cả các nguy cơ trên"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Hành vi nào ảnh hưởng đến tính bí mật của hệ thống thông tin?",
+    "options": [
+      "Một người dùng có thể xem thông tin của các người dùng khác",
+      "Virus xóa mất các tập tin trên đĩa cứng",
+      "Mất điện thường xuyên làm hệ thống máy tính làm việc gián đoạn",
+      "Tất cả các hành vi trên"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Để tìm bản rõ, người thám mã sử dụng cách nào?",
+    "options": ["Kết hợp nhiều phương pháp tấn công khác nhau"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Chức năng chính của Virus là gì?",
+    "options": [
+      "Lây nhiễm và sinh sản",
+      "Sống ký sinh và lây nhiễm",
+      "Tự phát triển độc lập và lây nhiễm",
+      "Sống ký sinh và sinh sản"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Đảm bảo an toàn thông tin bằng cách nào?",
+    "options": [
+      "Sử dụng phương pháp mã hóa",
+      "Sử dụng tường lửa",
+      "Phân quyền truy cập thông tin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "So sánh tốc độ mã hóa và giải mã của hệ mật mã công khai với mật mã bí mật hiện đại?",
+    "options": ["Mật mã công khai chậm hơn"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Giải mã là gì?",
+    "options": [
+      "Giải mã là quá trình biến đổi thông tin từ dạng không đọc được sang dạng đọc được"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Thám mã là gì?",
+    "options": [
+      "Thám mã là quá trình tấn công hệ mật mã để tìm bản rõ và khóa bí mật"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Mã hóa là gì?",
+    "options": [
+      "Mã hóa là quá trình biến đổi thông tin từ dạng đọc được sang dạng không đọc được"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Hành vi nào ảnh hưởng đến tính toàn vẹn của hệ thống thông tin?",
+    "options": [
+      "Một sinh viên sao chép bài tập của một sinh viên khác",
+      "Virus xóa mất các tập tin trên đĩa cứng",
+      "Mất điện thường xuyên làm hệ thống máy tính làm việc gián đoạn",
+      "Tất cả các hành vi trên"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Trojan là một phương thức tấn công kiểu nào?",
+    "options": [
+      "Can thiệp trực tiếp vào máy nạn nhân để lấy các thông tin quan trọng",
+      "Đánh cắp dữ liệu của nạn nhân truyền trên mạng",
+      "Tấn công làm tê liệt hệ thống mạng của nạn nhân",
+      "Điều khiển máy tính nạn nhân từ xa thông qua phần mềm cài sẵn trong máy"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Virus máy tính không thể lây lan qua phương tiện nào?",
+    "options": ["Mạng máy tính", "Đĩa CD", "Thẻ nhớ Flash", "Lưu trữ USB"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "SQL Injection là gì?",
+    "options": [
+      "Một ngôn ngữ lập trình đa năng",
+      "Một loại khai thác bảo mật trong đó kẻ tấn công thêm mã SQL vào hộp nhập biểu mẫu để truy cập tài nguyên hoặc thay đổi dữ liệu",
+      "Một ngôn ngữ dựa trên nguyên mẫu, sử dụng javascript",
+      "Một chương trình đố vui"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Có thể ngăn chặn SQL Injection bằng cách nào?",
+    "options": [
+      "Bắt lỗi dữ liệu đầu vào của người dùng đảm bảo rằng người dùng không thể nhập bất cứ điều gì khác ngoài những gì cho phép"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Cross-site scripting là gì?",
+    "options": [
+      "Là một loại lỗ hổng bảo mật thường được tìm thấy trong các web, cho phép kẻ tấn công chèn tệp lệnh phía máy khách vào các trang web được người dùng khác xem"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Social Engineering là gì?",
+    "options": [
+      "Social Engineering là kỹ thuật sai khiến mọi người thực hiện hành vi nào đó hoặc tiết lộ thông tin bí mật"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Rootkit là gì?",
+    "options": [
+      "Một bộ kit được các nhà sinh học sử dụng khi làm việc với các loại thực vật",
+      "Tên mặc định của thư mục UNIX",
+      "Rootkit được thiết kế để qua mặt các phương pháp bảo mật máy tính",
+      "Một máy chủ định danh cho vùng root của Domain Name System"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Kiến trúc TCP / IP sử dụng bao nhiêu lớp?",
+    "options": ["3 lớp", "4 lớp", "5 lớp", "7 lớp"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Điều nào sau đây không phải là tấn công tiêu đề HTTP?",
+    "options": [
+      "Accept-Language",
+      "Referer",
+      "Response splitting",
+      "Content-length"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Ngôn ngữ đánh dấu nào được thiết kế để mang dữ liệu?",
+    "options": ["ICMP", "HTTP", "HTML", "XML"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Kiểu tấn công nào liên quan đến kẻ tấn công truy cập các tệp trong các thư mục khác với thư mục gốc?",
+    "options": [
+      "SQL injection",
+      "Command injection",
+      "XML injection",
+      "Directory traversal"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Kiểu tấn công nào sửa đổi các trường có chứa các đặc tính khác nhau của dữ liệu đang được truyền đi?",
+    "options": [
+      "XML manipulation",
+      "HTML packet",
+      "SQL injection",
+      "HTTP header"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Điều nào trong số này KHÔNG phải là tấn công DoS?",
+    "options": ["SYN flood", "Ping flood", "Smurf", "Push flood"],
+    "correctAnswer": 3
+  }
+]

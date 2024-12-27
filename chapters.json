@@ -1,5 +1,25 @@
 [
   {
+    "name": "đề 1: bảo mật thông tin",
+    "quizFile": "quizzes/0_30question.json",
+    "isActive": "true"
+  },
+  {
+    "name": "đề 2: bảo mật thông tin",
+    "quizFile": "quizzes/30_60question.json",
+    "isActive": "true"
+  },
+  {
+    "name": "đề 3: bảo mật thông tin",
+    "quizFile": "quizzes/60_90question.json",
+    "isActive": "true"
+  },
+  {
+    "name": "đề 4: bảo mật thông tin",
+    "quizFile": "quizzes/90_120question.json",
+    "isActive": "true"
+  },
+  {
     "name": "Chương 2: hệ điều hành và kiến trúc",
     "quizFile": "quizzes/quiz_data_chapter2.json",
     "isActive": "true"

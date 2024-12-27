@@ -1,0 +1,177 @@
+[
+  {
+    "question": "Cơ sở của một cuộc tấn công SQL injection là gì?",
+    "options": [
+      "Để máy chủ SQL tấn công trình duyệt web máy khách",
+      "Để chèn câu lệnh SQL thông qua đầu vào người dùng chưa được lọc",
+      "Để hiển thị mã SQL để nó có thể được kiểm tra",
+      "Để liên kết các máy chủ SQL thành một botnet"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Hành động nào không thể thực hiện được thông qua tấn công SQL injection thành công?",
+    "options": [
+      "Định dạng lại ổ cứng của máy chủ ứng dụng web",
+      "Hiển thị danh sách số điện thoại của khách hàng",
+      "Khám phá tên của các trường khác nhau trong bảng",
+      "Xóa bảng cơ sở dữ liệu"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Tấn công phát lại là gì?",
+    "options": [
+      "Được coi là một loại tấn công dos",
+      "Tạo bản sao truyền để sử dụng sau này",
+      "Có thể được ngăn chặn bằng cách vá trình duyệt web",
+      "Replay các cuộc tấn công hơn và hơn để lũ máy chủ"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Một tên khác cho một đối tượng được chia sẻ cục bộ là gì?",
+    "options": [
+      "Flash cookie",
+      "Session cookie",
+      "Ram cookie",
+      "Secure cookie"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Plug-in trình duyệt có chức năng gì?",
+    "options": [
+      "Chỉ hoạt động trên máy chủ web",
+      "Có thể được nhúng bên trong trang web nhưng không thể thêm tiện ích",
+      "Có chức năng bổ sung cho toàn bộ trình duyệt",
+      "Đã được thay thế bằng tiện ích mở rộng của trình duyệt"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Một kẻ tấn công muốn tấn công kích thước tối đa của một loại số nguyên sẽ thực hiện loại tấn công nào?",
+    "options": [
+      "Buffer overflow",
+      "Real number",
+      "Heap size",
+      "Integer overflow"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Kẻ tấn công sử dụng tràn bộ đệm để làm gì?",
+    "options": [
+      "Xóa tập tin chữ ký tràn bộ đệm",
+      "Làm hỏng nhân để máy tính không thể khởi động lại",
+      "Trỏ đến một khu vực khác trong bộ nhớ dữ liệu chứa mã phần mềm độc hại của kẻ tấn công",
+      "Đặt virus vào nhân (kernel)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Điều gì là duy nhất về tấn công cross-site scripting (XSS) so với các cuộc tấn công injection khác?",
+    "options": [
+      "Mã SQL được sử dụng trong một cuộc tấn công XSS",
+      "XSS yêu cầu sử dụng trình duyệt",
+      "XSS không tấn công máy chủ ứng dụng web để ăn cắp hoặc làm hỏng thông tin của nó",
+      "Tấn công XSS hiếm khi được sử dụng nữa so với các cuộc tấn công injection khác"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Cookie không được tạo bởi trang web đang được xem là gì?",
+    "options": [
+      "Cookie chính chủ",
+      "Cookie của bên thứ hai",
+      "Cookie của bên thứ ba",
+      "Cookie của bên thứ tư"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Loại tấn công nào được thực hiện bởi kẻ tấn công lợi dụng sự xâm nhập và truy cập trái phép thông qua ba hệ thống thành công mà tất cả đều tin tưởng lẫn nhau?",
+    "options": [
+      "Privilege rights",
+      "Heap spray",
+      "Transitive",
+      "Vertical escalation"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Điều nào trong số này KHÔNG phải là lý do tại sao việc bảo mật các ứng dụng web phía máy chủ là khó?",
+    "options": [
+      "Mặc dù các thiết bị bảo mật mạng truyền thống có thể chặn các cuộc tấn công mạng truyền thống, chúng không thể luôn chặn các cuộc tấn công ứng dụng web",
+      "Các bộ vi xử lý trên máy khách nhỏ hơn trên các máy chủ web và do đó chúng dễ bảo vệ hơn",
+      "Nhiều cuộc tấn công ứng dụng web khai thác lỗ hổng chưa biết trước đó",
+      "Bằng cách thiết kế các ứng dụng web phía máy chủ động, chấp nhận đầu vào của người dùng có thể chứa mã độc"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Tuyên bố nào là chính xác về lý do tại sao các thiết bị bảo mật mạng truyền thống không thể được sử dụng để chặn các cuộc tấn công ứng dụng web?",
+    "options": [
+      "Các thiết bị bảo mật mạng truyền thống bỏ qua nội dung lưu lượng HTTP, là phương tiện tấn công ứng dụng web",
+      "Các cuộc tấn công ứng dụng web sử dụng các trình duyệt web không thể được điều khiển trên máy tính cục bộ",
+      "Các thiết bị bảo mật mạng không thể ngăn chặn các cuộc tấn công từ tài nguyên web",
+      "Tính chất phức tạp của TCP / IP cho phép quá nhiều lần ping bị chặn"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Trojan Horse là gì?",
+    "options": [
+      "Một chương trình độc hại mà lấy cắp tên người dùng và mật khẩu của bạn",
+      "Gây hại như mã giả mạo hoặc thay thế mã hợp pháp",
+      "Một người sử dụng trái phép thu truy cập vào cơ sở dữ liệu người dùng của bạn và cho biết thêm mình như một người sử dụng",
+      "Một máy chủ phải hy sinh cho tất cả các hacking nỗ lực để đăng nhập và giám sát các hoạt động hacking"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Khi một hacker cố gắng tấn công một máy chủ qua Internet nó được gọi là loại tấn công gì?",
+    "options": [
+      "Tấn công từ xa",
+      "Tấn công truy cập vật lý",
+      "Truy cập địa phương",
+      "Tấn công nội bộ"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Kỹ thuật tấn công phổ biến trên Web là gì?",
+    "options": [
+      "Chiếm hữu phiên làm việc",
+      "Tràn bộ đệm",
+      "Từ chối dịch vụ (DoS)",
+      "Chèn câu truy vấn SQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Phiên bản mới nhất của thuật toán băm bảo mật là gì?",
+    "options": ["SHA-2", "SHA-3", "SHA-4", "SHA-5"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Thuật toán mã hóa bất đối xứng nào sử dụng số nguyên tố?",
+    "options": ["EFS", "Quantum computing", "ECC", "RSA"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Điều nào trong số này KHÔNG phải là nơi khóa có thể được lưu trữ?",
+    "options": [
+      "Trong tokens",
+      "Trong digests",
+      "Trên hệ thống của người dùng cục bộ",
+      "Nhúng trong chứng chỉ kỹ thuật số"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Phương thức nào trong số này được coi là giao thức truyền mật mã yếu nhất?",
+    "options": ["SSL v2.0", "TLS v1.0", "TLS v1.1", "TLS v1.3"],
+    "correctAnswer": 0
+  }
+]
